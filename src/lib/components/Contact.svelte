@@ -1,0 +1,313 @@
+<script>
+  let formData = {
+    name: '',
+    phone: '',
+    email: '',
+    serviceType: 'pool',
+    message: ''
+  };
+  
+  let formStatus = 'idle'; // idle, submitting, success, error
+  let errorMessage = '';
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    formStatus = 'submitting';
+    
+    try {
+      // Using Formspree - replace YOUR_FORM_ID with actual Formspree form ID
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          serviceType: formData.serviceType,
+          message: formData.message
+        })
+      });
+
+      if (response.ok) {
+        formStatus = 'success';
+        formData = { name: '', phone: '', email: '', serviceType: 'pool', message: '' };
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      formStatus = 'error';
+      errorMessage = 'There was an error submitting your enquiry. Please email us directly.';
+    }
+  }
+</script>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p class="intro">
+    If you would like more information or wish to request a quotation, please get in touch.
+  </p>
+
+  <div class="contact-container">
+    <div class="contact-details">
+      <h3>Get In Touch</h3>
+      
+      <div class="contact-item">
+        <strong>Phone:</strong>
+        <a href="tel:+27714843047">+27 (0)71 484 3047</a>
+      </div>
+
+      <div class="contact-item">
+        <strong>Email:</strong>
+        <a href="mailto:gautengprojects@gmail.com">gautengprojects@gmail.com</a>
+        <a href="mailto:aquageniepools@gmail.com">aquageniepools@gmail.com</a>
+      </div>
+
+      <div class="contact-item">
+        <strong>WhatsApp:</strong>
+        <a 
+          href="https://wa.me/27714843047?text=Hello,%20I'd%20like%20to%20enquire%20about%20your%20services." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="whatsapp-link"
+        >
+          Chat with us on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-form-container">
+      <h3>Send Enquiry</h3>
+      
+      {#if formStatus === 'success'}
+        <div class="success-message">
+          <p>✓ Thank you for your enquiry. We will contact you as soon as possible.</p>
+        </div>
+      {:else}
+        <form on:submit={handleSubmit} class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input 
+              type="text" 
+              id="name" 
+              bind:value={formData.name}
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              bind:value={formData.phone}
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input 
+              type="email" 
+              id="email" 
+              bind:value={formData.email}
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="serviceType">Service Required *</label>
+            <select id="serviceType" bind:value={formData.serviceType} required>
+              <option value="pool">Pool Services</option>
+              <option value="handyman">Handyman Services</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea 
+              id="message" 
+              rows="5" 
+              bind:value={formData.message}
+              required
+            ></textarea>
+          </div>
+
+          {#if formStatus === 'error'}
+            <div class="error-message">
+              <p>{errorMessage}</p>
+            </div>
+          {/if}
+
+          <button 
+            type="submit" 
+            class="submit-button"
+            disabled={formStatus === 'submitting'}
+          >
+            {formStatus === 'submitting' ? 'Sending...' : 'Send Enquiry'}
+          </button>
+        </form>
+      {/if}
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact {
+    background: var(--bg-main);
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: var(--mp-primary);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    color: var(--mp-secondary);
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    color: var(--aqua-secondary);
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-item strong {
+    color: var(--mp-secondary);
+    font-size: 1.1rem;
+  }
+
+  .contact-item a {
+    color: var(--aqua-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .contact-item a:hover {
+    color: var(--aqua-secondary);
+    text-decoration: underline;
+  }
+
+  .whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  label {
+    font-weight: 600;
+    color: var(--mp-secondary);
+  }
+
+  input, select, textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--aqua-primary);
+  }
+
+  .submit-button {
+    background: var(--aqua-primary);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .submit-button:hover:not(:disabled) {
+    background: var(--aqua-secondary);
+    transform: translateY(-2px);
+  }
+
+  .submit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 1.5rem;
+    border-radius: 4px;
+    border-left: 4px solid #28a745;
+  }
+
+  .success-message p {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #dc3545;
+  }
+
+  .error-message p {
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2rem;
+    }
+
+    .contact-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+</style>

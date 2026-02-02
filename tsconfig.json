@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "Bundler",
+		"module": "ESNext",
+		"target": "ESNext",
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"types": ["@sveltejs/kit"],
+		"paths": {
+			"$lib": ["./src/lib"],
+			"$lib/*": ["./src/lib/*"]
+		}
+	},
+	"include": ["src/**/*.js", "src/**/*.ts", "src/**/*.svelte"],
+	"exclude": ["node_modules", "build"]
+}
