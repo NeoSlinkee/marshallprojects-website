@@ -1,16 +1,16 @@
 <script>
   const services = [
-    'Weekly and monthly pool maintenance',
-    'Pool cleaning and water balancing',
-    'Green-to-clean pool treatments',
-    'Pool repairs and refurbishments',
-    'Pool lighting installation and repairs',
-    'Filter sand changes',
-    'Pool covers',
-    'New pump installations',
-    'Pool solar heating',
-    'Heat pumps',
-    'Sand filter systems'
+    { text: 'Weekly and monthly pool maintenance', icon: '🏊' },
+    { text: 'Pool cleaning and water balancing', icon: '💧' },
+    { text: 'Green-to-clean pool treatments', icon: '🌿' },
+    { text: 'Pool repairs and refurbishments', icon: '🔧' },
+    { text: 'Pool lighting installation and repairs', icon: '💡' },
+    { text: 'Filter sand changes', icon: '⚙️' },
+    { text: 'Pool covers', icon: '🛡️' },
+    { text: 'New pump installations', icon: '⚡' },
+    { text: 'Pool solar heating', icon: '☀️' },
+    { text: 'Heat pumps', icon: '🌡️' },
+    { text: 'Sand filter systems', icon: '🔄' }
   ];
 </script>
 
@@ -27,9 +27,9 @@
 
   <div class="services-grid">
     {#each services as service}
-      <div class="service-item">
-        <span class="bullet">•</span>
-        <span>{service}</span>
+      <div class="service-card">
+        <span class="service-icon">{service.icon}</span>
+        <span class="service-text">{service.text}</span>
       </div>
     {/each}
   </div>
@@ -39,7 +39,7 @@
 
 <style>
   .services-aqua {
-    background: linear-gradient(to bottom, var(--bg-main), #f0f9ff);
+    background: linear-gradient(180deg, var(--aqua-light), var(--aqua-tint));
   }
 
   .section-header {
@@ -51,6 +51,7 @@
     font-size: 2.5rem;
     color: var(--aqua-primary);
     margin-bottom: 0.5rem;
+    font-weight: 700;
   }
 
   .subtitle {
@@ -70,31 +71,43 @@
   .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-    max-width: 900px;
+    gap: 1.25rem;
+    max-width: 1000px;
     margin: 0 auto 3rem;
   }
 
-  .service-item {
+  .service-card {
     display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    padding: 0.75rem;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
     background: white;
-    border-radius: 6px;
+    border-radius: var(--radius-md);
     border-left: 3px solid var(--aqua-primary);
-    transition: transform 0.2s;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
   }
 
-  .service-item:hover {
-    transform: translateX(4px);
+  .service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-left-width: 4px;
   }
 
-  .bullet {
-    color: var(--aqua-primary);
+  .service-icon {
     font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-text {
+    flex: 1;
+    line-height: 1.5;
+    color: var(--text-main);
   }
 
   .tagline {
@@ -116,6 +129,15 @@
 
     .services-grid {
       grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .service-card {
+      padding: 1rem 1.25rem;
+    }
+
+    .tagline {
+      font-size: 1.15rem;
     }
   }
 </style>

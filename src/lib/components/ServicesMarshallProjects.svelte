@@ -1,24 +1,24 @@
 <script>
   const services = [
-    'Interior and exterior painting',
-    'Roofing maintenance and repairs',
-    'Flooring installation and repairs',
-    'Damp proofing',
-    'Waterproofing solutions',
-    'General handyman services',
-    'Electrical work',
-    'Plumbing services',
-    'Tiling',
-    'General building maintenance',
-    'Home maintenance for tenants and owners'
+    { text: 'Interior and exterior painting', icon: '🎨' },
+    { text: 'Roofing maintenance and repairs', icon: '🏠' },
+    { text: 'Flooring installation and repairs', icon: '📐' },
+    { text: 'Damp proofing', icon: '💧' },
+    { text: 'Waterproofing solutions', icon: '🛡️' },
+    { text: 'General handyman services', icon: '🔨' },
+    { text: 'Electrical work', icon: '⚡' },
+    { text: 'Plumbing services', icon: '🚰' },
+    { text: 'Tiling', icon: '◻️' },
+    { text: 'General building maintenance', icon: '🏗️' },
+    { text: 'Home maintenance for tenants and owners', icon: '🔑' }
   ];
 
   const additionalServices = [
-    'Decor solutions (blinds, curtains, wallpaper, wall panels, mirrors)',
-    'Decking solutions',
-    'Security-related installations',
-    'Furniture and rug installations',
-    'Solar panel cleaning services'
+    { text: 'Decor solutions (blinds, curtains, wall panels, mirrors)', icon: '🪟' },
+    { text: 'Decking solutions', icon: '🌳' },
+    { text: 'Security-related installations', icon: '🔒' },
+    { text: 'Furniture and rug installations', icon: '🛋️' },
+    { text: 'Solar panel cleaning services', icon: '☀️' }
   ];
 </script>
 
@@ -36,9 +36,9 @@
   <h3>Our Services</h3>
   <div class="services-grid">
     {#each services as service}
-      <div class="service-item">
-        <span class="bullet">•</span>
-        <span>{service}</span>
+      <div class="service-card">
+        <span class="service-icon">{service.icon}</span>
+        <span class="service-text">{service.text}</span>
       </div>
     {/each}
   </div>
@@ -46,9 +46,9 @@
   <h3>Additional Services</h3>
   <div class="additional-services">
     {#each additionalServices as service}
-      <div class="service-item">
-        <span class="bullet">•</span>
-        <span>{service}</span>
+      <div class="service-card">
+        <span class="service-icon">{service.icon}</span>
+        <span class="service-text">{service.text}</span>
       </div>
     {/each}
   </div>
@@ -56,7 +56,7 @@
 
 <style>
   .services-marshall {
-    background: var(--mp-accent);
+    background: var(--mp-light);
   }
 
   .section-header {
@@ -68,6 +68,7 @@
     font-size: 2.5rem;
     color: var(--mp-primary);
     margin-bottom: 0.5rem;
+    font-weight: 700;
   }
 
   .subtitle {
@@ -87,38 +88,51 @@
   h3 {
     font-size: 1.8rem;
     color: var(--mp-secondary);
-    margin: 2rem 0 1.5rem;
+    margin: 2.5rem 0 1.5rem;
     text-align: center;
+    font-weight: 600;
   }
 
   .services-grid, .additional-services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-    max-width: 900px;
+    gap: 1.25rem;
+    max-width: 1000px;
     margin: 0 auto 2rem;
   }
 
-  .service-item {
+  .service-card {
     display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    padding: 0.75rem;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
     background: white;
-    border-radius: 6px;
+    border-radius: var(--radius-md);
     border-left: 3px solid var(--mp-primary);
-    transition: transform 0.2s;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
   }
 
-  .service-item:hover {
-    transform: translateX(4px);
+  .service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-left-width: 4px;
   }
 
-  .bullet {
-    color: var(--mp-primary);
+  .service-icon {
     font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-text {
+    flex: 1;
+    line-height: 1.5;
+    color: var(--text-main);
   }
 
   @media (max-width: 768px) {
@@ -128,6 +142,7 @@
 
     h3 {
       font-size: 1.5rem;
+      margin: 2rem 0 1.25rem;
     }
 
     .subtitle {
@@ -136,6 +151,11 @@
 
     .services-grid, .additional-services {
       grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .service-card {
+      padding: 1rem 1.25rem;
     }
   }
 </style>

@@ -57,12 +57,14 @@
     color: var(--aqua-primary);
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    font-weight: 600;
   }
 
   .footer-section h4 {
     color: var(--aqua-primary);
     font-size: 1.1rem;
     margin-bottom: 1rem;
+    font-weight: 600;
   }
 
   .footer-section p {

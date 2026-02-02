@@ -35,6 +35,7 @@
     color: var(--mp-primary);
     text-align: center;
     margin-bottom: 2rem;
+    font-weight: 700;
   }
 
   .about-content {
@@ -46,35 +47,48 @@
   .about-content > p {
     margin-bottom: 2rem;
     font-size: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .divisions {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin: 3rem 0;
   }
 
   .division {
     padding: 2rem;
-    border-radius: 8px;
-    background: var(--mp-accent);
+    border-radius: var(--radius-lg);
+    background: white;
     border-left: 4px solid var(--aqua-primary);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+  }
+
+  .division:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
   }
 
   .division h3 {
     color: var(--aqua-secondary);
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
   }
 
   .division p {
     color: var(--mp-secondary);
+    line-height: 1.7;
   }
 
   .closing {
     text-align: center;
     font-size: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (max-width: 768px) {
@@ -85,6 +99,10 @@
     .divisions {
       grid-template-columns: 1fr;
       gap: 1.5rem;
+    }
+
+    .division {
+      padding: 1.5rem;
     }
   }
 </style>
