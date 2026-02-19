@@ -44,119 +44,130 @@
 </script>
 
 <section class="contact" id="contact">
-  <h2>Contact Us</h2>
-  <p class="intro">
-    If you would like more information or wish to request a quotation, please get in touch.
-  </p>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p class="intro">
+      If you would like more information or wish to request a quotation, please get in touch.
+    </p>
 
-  <div class="contact-container">
-    <div class="contact-details">
-      <h3>Get In Touch</h3>
-      
-      <div class="contact-item">
-        <strong>Phone:</strong>
-        <a href="tel:+27714843047">+27 (0)71 484 3047</a>
-      </div>
+    <div class="contact-wrapper">
+      <div class="contact-container">
+        <div class="contact-details">
+          <h3>Get In Touch</h3>
+          
+          <div class="contact-item">
+            <strong>Phone:</strong>
+            <a href="tel:+27792281033">+27 (0)79 228 1033</a>
+          </div>
 
-      <div class="contact-item">
-        <strong>Email:</strong>
-        <a href="mailto:gautengprojects@gmail.com">gautengprojects@gmail.com</a>
-        <a href="mailto:aquageniepools@gmail.com">aquageniepools@gmail.com</a>
-      </div>
+          <div class="contact-item">
+            <strong>Email:</strong>
+            <a href="mailto:gautengprojects@gmail.com">gautengprojects@gmail.com</a>
+            <a href="mailto:aquageniepools@gmail.com">aquageniepools@gmail.com</a>
+          </div>
 
-      <div class="contact-item">
-        <strong>WhatsApp:</strong>
-        <a 
-          href="https://wa.me/27714843047?text=Hello,%20I'd%20like%20to%20enquire%20about%20your%20services." 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="whatsapp-link"
-        >
-          Chat with us on WhatsApp
-        </a>
-      </div>
-    </div>
-
-    <div class="contact-form-container">
-      <h3>Send Enquiry</h3>
-      
-      {#if formStatus === 'success'}
-        <div class="success-message">
-          <p>✓ Thank you for your enquiry. We will contact you as soon as possible.</p>
+          <div class="contact-item">
+            <strong>WhatsApp:</strong>
+            <a 
+              href="https://wa.me/27714843047?text=Hello,%20I'd%20like%20to%20enquire%20about%20your%20services." 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="whatsapp-link"
+            >
+              <span class="whatsapp-icon">💬</span>
+              Chat with us on WhatsApp
+            </a>
+          </div>
         </div>
-      {:else}
-        <form on:submit={handleSubmit} class="contact-form">
-          <div class="form-group">
-            <label for="name">Full Name *</label>
-            <input 
-              type="text" 
-              id="name" 
-              bind:value={formData.name}
-              required 
-            />
-          </div>
 
-          <div class="form-group">
-            <label for="phone">Phone Number *</label>
-            <input 
-              type="tel" 
-              id="phone" 
-              bind:value={formData.phone}
-              required 
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input 
-              type="email" 
-              id="email" 
-              bind:value={formData.email}
-              required 
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="serviceType">Service Required *</label>
-            <select id="serviceType" bind:value={formData.serviceType} required>
-              <option value="pool">Pool Services</option>
-              <option value="handyman">Handyman Services</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message *</label>
-            <textarea 
-              id="message" 
-              rows="5" 
-              bind:value={formData.message}
-              required
-            ></textarea>
-          </div>
-
-          {#if formStatus === 'error'}
-            <div class="error-message">
-              <p>{errorMessage}</p>
+        <div class="contact-form-container">
+          <h3>Send Enquiry</h3>
+          
+          {#if formStatus === 'success'}
+            <div class="success-message">
+              <p>✓ Thank you for your enquiry. We will contact you as soon as possible.</p>
             </div>
-          {/if}
+          {:else}
+            <form on:submit={handleSubmit} class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  bind:value={formData.name}
+                  required 
+                />
+              </div>
 
-          <button 
-            type="submit" 
-            class="submit-button"
-            disabled={formStatus === 'submitting'}
-          >
-            {formStatus === 'submitting' ? 'Sending...' : 'Send Enquiry'}
-          </button>
-        </form>
-      {/if}
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  bind:value={formData.phone}
+                  required 
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  bind:value={formData.email}
+                  required 
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="serviceType">Service Required *</label>
+                <select id="serviceType" bind:value={formData.serviceType} required>
+                  <option value="pool">Pool Services</option>
+                  <option value="handyman">Handyman Services</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea 
+                  id="message" 
+                  rows="5" 
+                  bind:value={formData.message}
+                  required
+                ></textarea>
+              </div>
+
+              {#if formStatus === 'error'}
+                <div class="error-message">
+                  <p>{errorMessage}</p>
+                </div>
+              {/if}
+
+              <button 
+                type="submit" 
+                class="submit-button"
+                disabled={formStatus === 'submitting'}
+              >
+                {formStatus === 'submitting' ? 'Sending...' : 'Send Enquiry'}
+              </button>
+            </form>
+          {/if}
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <style>
   .contact {
-    background: var(--bg-main);
+    background: linear-gradient(180deg, var(--aqua-light) 0%, var(--bg-main) 100%);
+    padding: 5rem 1.5rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   h2 {
@@ -164,28 +175,35 @@
     color: var(--mp-primary);
     text-align: center;
     margin-bottom: 1rem;
+    font-weight: 700;
   }
 
   .intro {
     text-align: center;
     font-size: 1.1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
     color: var(--mp-secondary);
+  }
+
+  .contact-wrapper {
+    display: grid;
+    gap: 2rem;
   }
 
   .contact-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
-    max-width: 1000px;
-    margin: 0 auto;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2.5rem;
+    align-items: start;
   }
 
+  .contact-details, 
   .contact-form-container {
     background: white;
-    padding: 2rem;
+    padding: 2.25rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
+    height: 100%;
   }
 
   h3 {
@@ -233,6 +251,10 @@
     align-items: center;
     gap: 0.5rem;
     font-weight: 600;
+  }
+
+  .whatsapp-icon {
+    font-size: 1.2rem;
   }
 
   .contact-form {
@@ -283,6 +305,7 @@
     cursor: pointer;
     transition: all var(--transition-base);
     box-shadow: var(--shadow-sm);
+    align-self: start;
   }
 
   .submit-button:hover:not(:disabled) {
@@ -304,7 +327,7 @@
     background: #d4edda;
     color: #155724;
     padding: 1.5rem;
-    border-radius: 4px;
+    border-radius: var(--radius-md);
     border-left: 4px solid #28a745;
   }
 
@@ -317,7 +340,7 @@
     background: #f8d7da;
     color: #721c24;
     padding: 1rem;
-    border-radius: 4px;
+    border-radius: var(--radius-md);
     border-left: 4px solid #dc3545;
   }
 
@@ -326,6 +349,10 @@
   }
 
   @media (max-width: 768px) {
+    .contact {
+      padding: 4rem 1.5rem;
+    }
+
     h2 {
       font-size: 2rem;
     }
@@ -333,6 +360,15 @@
     .contact-container {
       grid-template-columns: 1fr;
       gap: 2rem;
+    }
+
+    .contact-details, 
+    .contact-form-container {
+      padding: 1.75rem;
+    }
+
+    .submit-button {
+      width: 100%;
     }
   }
 </style>

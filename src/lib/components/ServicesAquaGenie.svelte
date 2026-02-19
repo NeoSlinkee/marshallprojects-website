@@ -1,45 +1,86 @@
 <script>
   const services = [
-    { text: 'Weekly and monthly pool maintenance', icon: '🏊' },
-    { text: 'Pool cleaning and water balancing', icon: '💧' },
-    { text: 'Green-to-clean pool treatments', icon: '🌿' },
-    { text: 'Pool repairs and refurbishments', icon: '🔧' },
-    { text: 'Pool lighting installation and repairs', icon: '💡' },
-    { text: 'Filter sand changes', icon: '⚙️' },
-    { text: 'Pool covers', icon: '🛡️' },
-    { text: 'New pump installations', icon: '⚡' },
-    { text: 'Pool solar heating', icon: '☀️' },
-    { text: 'Heat pumps', icon: '🌡️' },
-    { text: 'Sand filter systems', icon: '🔄' }
+    { 
+      title: 'Pool Maintenance', 
+      description: 'Weekly and monthly pool servicing, water balancing, and chemical testing for optimal pool health.',
+      image: '/images/services/pool-maintenance.jpg'
+    },
+    { 
+      title: 'Pool Repairs', 
+      description: 'Professional pool equipment repairs, leak detection, and structural repairs to keep your pool functioning perfectly.',
+      image: '/images/services/pool-repairs.jpg'
+    },
+    { 
+      title: 'Pool Refurbishments', 
+      description: 'Complete pool renovations including resurfacing, tiling, coping, and green-to-clean transformations.',
+      image: '/images/services/pool-refurbishment.jpg'
+    },
+    { 
+      title: 'Pool Heating', 
+      description: 'Solar heating and heat pump installations to enjoy your pool year-round in any weather.',
+      image: '/images/services/pool-heating.jpg'
+    },
+    { 
+      title: 'Pump Installations', 
+      description: 'New pump installations, replacements, and upgrades for energy-efficient pool circulation.',
+      image: '/images/services/pump-installation.jpg'
+    },
+    { 
+      title: 'Filter Sand Changes', 
+      description: 'Filter sand replacements and system upgrades to maintain crystal clear water quality.',
+      image: '/images/services/filter-sand.jpg'
+    }
   ];
 </script>
 
-<section class="services-aqua">
-  <div class="section-header">
-    <h2>Aqua-Genie</h2>
-    <p class="subtitle">Swimming Pool Maintenance & Repairs</p>
-  </div>
-  
-  <p class="intro">
-    Aqua-Genie provides complete swimming pool maintenance services to keep your pool 
-    clean, safe, and ready to use all year round.
-  </p>
+<section class="services-aqua" id="services-aqua">
+  <div class="container">
+    <div class="section-header">
+      <h2>Aqua-Genie</h2>
+      <p class="subtitle">Swimming Pool Maintenance & Repairs</p>
+    </div>
+    
+    <p class="intro">
+      Aqua-Genie provides complete swimming pool maintenance services to keep your pool 
+      clean, safe, and ready to use all year round.
+    </p>
 
-  <div class="services-grid">
-    {#each services as service}
-      <div class="service-card">
-        <span class="service-icon">{service.icon}</span>
-        <span class="service-text">{service.text}</span>
-      </div>
-    {/each}
-  </div>
+    <div class="services-grid">
+      {#each services as service}
+        <div class="service-card">
+          <div class="service-image-wrapper">
+            <img 
+              src={service.image} 
+              alt={service.title}
+              loading="lazy"
+              on:error={(e) => e.target.parentElement.classList.add('image-error')}
+            />
+            <div class="image-overlay"></div>
+            <div class="service-fallback">
+              <span class="fallback-icon">🏊</span>
+            </div>
+          </div>
+          <div class="service-content">
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+          </div>
+        </div>
+      {/each}
+    </div>
 
-  <p class="tagline">Everything for your pool — to keep you swimming.</p>
+    <p class="tagline">Everything for your pool — to keep you swimming.</p>
+  </div>
 </section>
 
 <style>
   .services-aqua {
     background: linear-gradient(180deg, var(--aqua-light), var(--aqua-tint));
+    padding: 5rem 1.5rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .section-header {
@@ -62,7 +103,7 @@
 
   .intro {
     max-width: 700px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 3.5rem;
     text-align: center;
     font-size: 1.1rem;
     line-height: 1.8;
@@ -70,44 +111,92 @@
 
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.25rem;
-    max-width: 1000px;
-    margin: 0 auto 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
   }
 
   .service-card {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.25rem 1.5rem;
     background: white;
-    border-radius: var(--radius-md);
-    border-left: 3px solid var(--aqua-primary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
+    display: flex;
+    flex-direction: column;
   }
 
   .service-card:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
-    border-left-width: 4px;
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
   }
 
-  .service-icon {
-    font-size: 1.5rem;
-    flex-shrink: 0;
-    width: 32px;
-    height: 32px;
+  .service-image-wrapper {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--aqua-primary) 0%, var(--aqua-secondary) 100%);
+  }
+
+  .service-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+  }
+
+  .service-card:hover .service-image-wrapper img {
+    transform: scale(1.05);
+  }
+
+  .image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+    pointer-events: none;
+  }
+
+  .service-fallback {
+    position: absolute;
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
 
-  .service-text {
+  .service-image-wrapper.image-error .service-fallback {
+    opacity: 1;
+  }
+
+  .service-image-wrapper.image-error img {
+    display: none;
+  }
+
+  .fallback-icon {
+    font-size: 4rem;
+    opacity: 0.7;
+  }
+
+  .service-content {
+    padding: 1.75rem;
     flex: 1;
-    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-content h3 {
+    font-size: 1.4rem;
+    color: var(--aqua-secondary);
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+  }
+
+  .service-content p {
+    line-height: 1.7;
     color: var(--text-main);
+    flex: 1;
   }
 
   .tagline {
@@ -118,7 +207,17 @@
     font-style: italic;
   }
 
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   @media (max-width: 768px) {
+    .services-aqua {
+      padding: 4rem 1.5rem;
+    }
+
     h2 {
       font-size: 2rem;
     }
@@ -129,11 +228,15 @@
 
     .services-grid {
       grid-template-columns: 1fr;
-      gap: 1rem;
+      gap: 1.5rem;
     }
 
-    .service-card {
-      padding: 1rem 1.25rem;
+    .service-content {
+      padding: 1.5rem;
+    }
+
+    .service-content h3 {
+      font-size: 1.25rem;
     }
 
     .tagline {

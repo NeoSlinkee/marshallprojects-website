@@ -34,28 +34,42 @@
 </script>
 
 <section class="why-choose">
-  <h2>Why Choose Us</h2>
-  <p class="intro">
-    We believe in doing the job properly the first time and building long-term relationships with our clients.
-  </p>
-  
-  <div class="reasons-grid">
-    {#each reasons as reason}
-      <div class="reason-card">
-        <div class="icon-wrapper">
-          <span class="reason-icon">{reason.icon}</span>
+  <div class="container">
+    <h2>Why Choose Us</h2>
+    <p class="intro">
+      We believe in doing the job properly the first time and building long-term relationships with our clients.
+    </p>
+    
+    <div class="reasons-grid">
+      {#each reasons as reason}
+        <div class="reason-card">
+          <div class="icon-wrapper">
+            <span class="reason-icon">{reason.icon}</span>
+          </div>
+          <h3>{reason.title}</h3>
+          <p>{reason.description}</p>
         </div>
-        <h3>{reason.title}</h3>
-        <p>{reason.description}</p>
-      </div>
-    {/each}
+      {/each}
+    </div>
   </div>
 </section>
 
 <style>
   .why-choose {
-    background: linear-gradient(135deg, var(--mp-primary) 0%, var(--mp-secondary) 100%);
+    background: 
+      linear-gradient(135deg, rgba(74, 74, 74, 0.95) 0%, rgba(47, 47, 47, 0.97) 100%),
+      url('/images/misc/worker-hands.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
+    position: relative;
+    padding: 5rem 1.5rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   h2 {
@@ -75,10 +89,8 @@
 
   .reasons-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
   }
 
   .reason-card {
@@ -127,7 +139,17 @@
     margin: 0;
   }
 
+  @media (max-width: 1024px) {
+    .reasons-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   @media (max-width: 768px) {
+    .why-choose {
+      padding: 4rem 1.5rem;
+    }
+
     h2 {
       font-size: 2rem;
     }

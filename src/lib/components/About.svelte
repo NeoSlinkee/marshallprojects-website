@@ -2,32 +2,40 @@
 </script>
 
 <section class="about">
-  <h2>About Us</h2>
-  <div class="about-content">
-    <p>
-      <strong>Marshall Projects & Protective Coatings CC</strong> operates two specialised 
-      service divisions to better serve residential homeowners:
-    </p>
-    <div class="divisions">
-      <div class="division">
-        <h3>Aqua-Genie</h3>
-        <p>Professional swimming pool maintenance, repairs, and refurbishments</p>
+  <div class="container">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <p>
+        <strong>Marshall Projects & Protective Coatings CC</strong> operates two specialised 
+        service divisions to better serve residential homeowners:
+      </p>
+      <div class="divisions">
+        <div class="division">
+          <h3>Aqua-Genie</h3>
+          <p>Professional swimming pool maintenance, repairs, and refurbishments</p>
+        </div>
+        <div class="division">
+          <h3>Marshall Projects</h3>
+          <p>Handyman, painting, and general home maintenance services</p>
+        </div>
       </div>
-      <div class="division">
-        <h3>Marshall Projects</h3>
-        <p>Handyman, painting, and general home maintenance services</p>
-      </div>
+      <p class="closing">
+        By combining these services under one umbrella, we provide a convenient, reliable, 
+        and cost-effective solution for ongoing property and pool care.
+      </p>
     </div>
-    <p class="closing">
-      By combining these services under one umbrella, we provide a convenient, reliable, 
-      and cost-effective solution for ongoing property and pool care.
-    </p>
   </div>
 </section>
 
 <style>
   .about {
     background: var(--bg-main);
+    padding: 5rem 1.5rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   h2 {
@@ -39,7 +47,7 @@
   }
 
   .about-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     line-height: 1.8;
   }
@@ -53,7 +61,7 @@
 
   .divisions {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 3rem 0;
   }
@@ -92,6 +100,10 @@
   }
 
   @media (max-width: 768px) {
+    .about {
+      padding: 4rem 1.5rem;
+    }
+
     h2 {
       font-size: 2rem;
     }
@@ -99,10 +111,6 @@
     .divisions {
       grid-template-columns: 1fr;
       gap: 1.5rem;
-    }
-
-    .division {
-      padding: 1.5rem;
     }
   }
 </style>
