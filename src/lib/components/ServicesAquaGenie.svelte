@@ -1,11 +1,9 @@
 <script>
-  import { getCloudinaryUrl } from '$lib/cloudinary.js';
-
   const services = [
     { 
       title: 'Pool Maintenance', 
       description: 'Weekly and monthly pool servicing, water balancing, and chemical testing for optimal pool health.',
-      image: getCloudinaryUrl('clear-blue-pool')
+      image: '/images/gallery/pool-1.jpg'
     },
     { 
       title: 'Pool Repairs', 
@@ -25,7 +23,7 @@
     { 
       title: 'Pump Installations', 
       description: 'New pump installations, replacements, and upgrades for energy-efficient pool circulation.',
-      image: getCloudinaryUrl('pump-installation')
+      image: '/images/gallery/pool-5.jpg'
     },
     { 
       title: 'Filter Sand Changes', 
