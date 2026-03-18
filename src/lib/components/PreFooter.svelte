@@ -15,12 +15,13 @@
 <style>
   .pre-footer {
     background: linear-gradient(180deg, var(--mp-primary) 0%, var(--mp-secondary) 100%);
-    padding: 3rem 1.5rem;
+    padding: 3rem 0;
   }
 
   .pre-footer-content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 1.5rem;
     text-align: center;
   }
 
@@ -52,7 +53,11 @@
 
   @media (max-width: 768px) {
     .pre-footer {
-      padding: 2.5rem 1rem;
+      padding: 2.5rem 0;
+    }
+
+    .pre-footer-content {
+      padding: 0 1.25rem;
     }
 
     .cta-text {

@@ -70,14 +70,8 @@ p {
   max-width: none;
 }
 
-section {
-  padding: 4rem 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+/* Global section resets removed - each component controls its own width */
 
 @media (max-width: 768px) {
-  section {
-    padding: 3rem 1rem;
-  }
+  /* Component-specific responsive handled in each component */
 }

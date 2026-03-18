@@ -1,16 +1,28 @@
 <script>
-  const galleryImages = [
-    { src: '/images/gallery/pool-1.jpg', alt: 'Pool renovation project', caption: 'Pool Renovation', location: 'Randburg' },
-    { src: '/images/gallery/pool-2.jpg', alt: 'Crystal clear pool water', caption: 'Water Treatment', location: 'Bryanston' },
-    { src: '/images/gallery/pool-3.jpg', alt: 'Pool refurbishment complete', caption: 'Refurbishment', location: 'Sandton' },
-    { src: '/images/gallery/pool-4.jpg', alt: 'Green to clean transformation', caption: 'Green to Clean', location: 'Fourways' },
-    { src: '/images/gallery/pool-5.jpg', alt: 'Pool lighting installation', caption: 'Lighting Install', location: 'Randburg' },
-    { src: '/images/gallery/pool-6.jpg', alt: 'Complete pool service', caption: 'Full Service', location: 'Bryanston' },
-    { src: '/images/gallery/pool-7.jpg', alt: 'Pool maintenance', caption: 'Pool Maintenance', location: 'Sandton' },
-    { src: '/images/gallery/pool-8.jpg', alt: 'Handyman repairs', caption: 'Handyman Repairs', location: 'Randburg' },
-    { src: '/images/gallery/pool-9.jpg', alt: 'Property maintenance', caption: 'Property Maintenance', location: 'Fourways' }
-  ];
-
+  import { onMount } from 'svelte';
+  import { fetchCloudinaryGallery, isCloudinaryEnabled } from '$lib/cloudinary.js';
+  import localGalleryData from '$lib/data/gallery.json';
+  
+  // Gallery images - loaded from Cloudinary if configured, otherwise local JSON
+  let galleryImages = [];
+  let loading = true;
+  let useCloudinary = false;
+  
+  onMount(async () => {
+    if (isCloudinaryEnabled()) {
+      const cloudinaryImages = await fetchCloudinaryGallery();
+      if (cloudinaryImages && cloudinaryImages.length > 0) {
+        galleryImages = cloudinaryImages;
+        useCloudinary = true;
+      } else {
+        galleryImages = localGalleryData.images || [];
+      }
+    } else {
+      galleryImages = localGalleryData.images || [];
+    }
+    loading = false;
+  });
+  
   let selectedImage = null;
 
   function openLightbox(image) {
@@ -26,6 +38,14 @@
       closeLightbox();
     }
   }
+  
+  // Get the appropriate image URL for lightbox
+  function getLightboxSrc(image) {
+    if (useCloudinary && image.srcLarge) {
+      return image.srcLarge;
+    }
+    return image.src;
+  }
 </script>
 
 <svelte:window on:keydown={handleKeydown} />
@@ -37,34 +57,43 @@
       <p class="subtitle">Real projects from satisfied Gauteng homeowners</p>
     </div>
 
-    <div class="gallery-grid">
-      {#each galleryImages as image, index}
-        <button 
-          class="gallery-item"
-          on:click={() => openLightbox(image)}
-          aria-label="View {image.alt}"
-        >
-          <div class="image-wrapper">
-            <img 
-              src={image.src} 
-              alt={image.alt}
-              loading="lazy"
-              on:error={(e) => e.target.style.display = 'none'}
-            />
-            <div class="image-overlay">
-              <div class="caption-wrapper">
-                <span class="caption-title">{image.caption}</span>
-                <span class="caption-location">{image.location}</span>
+    {#if loading}
+      <div class="gallery-loading">
+        <div class="loading-spinner"></div>
+        <p>Loading gallery...</p>
+      </div>
+    {:else if galleryImages.length === 0}
+      <p class="gallery-note">Gallery images coming soon.</p>
+    {:else}
+      <div class="gallery-grid">
+        {#each galleryImages as image, index}
+          <button 
+            class="gallery-item"
+            on:click={() => openLightbox(image)}
+            aria-label="View {image.alt}"
+          >
+            <div class="image-wrapper">
+              <img 
+                src={image.src} 
+                alt={image.alt}
+                loading="lazy"
+                on:error={(e) => e.target.style.display = 'none'}
+              />
+              <div class="image-overlay">
+                <div class="caption-wrapper">
+                  <span class="caption-title">{image.caption}</span>
+                  <span class="caption-location">{image.location}</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="image-fallback">
-            <span class="fallback-icon">📷</span>
-            <span class="fallback-text">{image.caption}</span>
-          </div>
-        </button>
-      {/each}
-    </div>
+            <div class="image-fallback">
+              <span class="fallback-icon">📷</span>
+              <span class="fallback-text">{image.caption}</span>
+            </div>
+          </button>
+        {/each}
+      </div>
+    {/if}
 
     <p class="gallery-note">
       <em>Images showcase our actual pool maintenance and renovation work across Gauteng.</em>
@@ -86,8 +115,8 @@
     </button>
     <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
     <div class="lightbox-content" on:click|stopPropagation role="presentation">
-      <img src={selectedImage.src} alt={selectedImage.alt} />
-      <p class="lightbox-caption">{selectedImage.caption}</p>
+      <img src={getLightboxSrc(selectedImage)} alt={selectedImage.alt} />
+      <p class="lightbox-caption">{selectedImage.caption} — {selectedImage.location}</p>
     </div>
   </div>
 {/if}
@@ -95,12 +124,13 @@
 <style>
   .gallery {
     background: var(--bg-main);
-    padding: 5rem 1.5rem;
+    padding: 5rem 0;
   }
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   .section-header {
@@ -234,6 +264,29 @@
     font-size: 0.95rem;
   }
 
+  .gallery-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 1rem;
+    color: var(--mp-primary);
+  }
+
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--aqua-tint);
+    border-top-color: var(--aqua-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
   /* Lightbox */
   .lightbox {
     position: fixed;
@@ -297,7 +350,11 @@
 
   @media (max-width: 768px) {
     .gallery {
-      padding: 4rem 1.5rem;
+      padding: 4rem 0;
+    }
+
+    .container {
+      padding: 0 1.25rem;
     }
 
     h2 {

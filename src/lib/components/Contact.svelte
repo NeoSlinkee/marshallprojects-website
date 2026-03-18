@@ -162,12 +162,13 @@
 <style>
   .contact {
     background: linear-gradient(180deg, var(--aqua-light) 0%, var(--bg-main) 100%);
-    padding: 5rem 1.5rem;
+    padding: 5rem 0;
   }
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   h2 {
@@ -350,7 +351,11 @@
 
   @media (max-width: 768px) {
     .contact {
-      padding: 4rem 1.5rem;
+      padding: 4rem 0;
+    }
+
+    .container {
+      padding: 0 1.25rem;
     }
 
     h2 {

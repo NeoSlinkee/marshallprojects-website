@@ -43,7 +43,7 @@
   .footer {
     background: var(--mp-secondary);
     color: white;
-    padding: 4rem 1.5rem 2rem;
+    padding: 4rem 0 2rem;
     position: relative;
     overflow: hidden;
   }
@@ -59,6 +59,7 @@
   .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1.5rem;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 3rem;
@@ -114,7 +115,7 @@
   .footer-bottom {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding: 2rem 1.5rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     text-align: center;
     position: relative;
@@ -136,13 +137,18 @@
 
   @media (max-width: 768px) {
     .footer {
-      padding: 3rem 1.5rem 1.5rem;
+      padding: 3rem 0 1.5rem;
     }
 
     .footer-content {
+      padding: 0 1.25rem;
       grid-template-columns: 1fr;
       gap: 2rem;
       margin-bottom: 2rem;
+    }
+
+    .footer-bottom {
+      padding: 2rem 1.25rem 0;
     }
 
     .footer-section h3 {

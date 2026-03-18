@@ -13,10 +13,16 @@
         <div class="division">
           <h3>Aqua-Genie</h3>
           <p>Professional swimming pool maintenance, repairs, and refurbishments</p>
+          <div class="logos">
+            <img src="/images/aquagenie-logo.svg" alt="Aqua-Genie Logo" class="logo logo-aqua" />
+          </div>
         </div>
         <div class="division">
           <h3>Marshall Projects</h3>
           <p>Handyman, painting, and general home maintenance services</p>
+          <div class="logos">
+            <img src="/images/marshallprojects-logo.svg" alt="Marshall Projects Logo" class="logo logo-marshall" />
+          </div>
         </div>
       </div>
       <p class="closing">
@@ -30,12 +36,13 @@
 <style>
   .about {
     background: var(--bg-main);
-    padding: 5rem 1.5rem;
+    padding: 5rem 0;
   }
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   h2 {
@@ -92,6 +99,28 @@
     line-height: 1.7;
   }
 
+  .logos {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: min(100%, 220px);
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+  }
+
+  .logo-aqua {
+    width: min(100%, 320px);
+  }
+
+  .logo-marshall {
+    width: min(100%, 260px);
+  }
+
   .closing {
     text-align: center;
     font-size: 1.1rem;
@@ -101,7 +130,11 @@
 
   @media (max-width: 768px) {
     .about {
-      padding: 4rem 1.5rem;
+      padding: 4rem 0;
+    }
+
+    .container {
+      padding: 0 1.25rem;
     }
 
     h2 {
@@ -111,6 +144,14 @@
     .divisions {
       grid-template-columns: 1fr;
       gap: 1.5rem;
+    }
+
+    .logo-aqua {
+      width: min(100%, 240px);
+    }
+
+    .logo-marshall {
+      width: min(100%, 210px);
     }
   }
 </style>

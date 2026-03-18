@@ -50,12 +50,13 @@
 <style>
   .testimonials {
     background: var(--bg-main);
-    padding: 5rem 1.5rem;
+    padding: 5rem 0;
   }
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   .section-header {
@@ -142,7 +143,11 @@
 
   @media (max-width: 768px) {
     .testimonials {
-      padding: 4rem 1.5rem;
+      padding: 4rem 0;
+    }
+
+    .container {
+      padding: 0 1.25rem;
     }
 
     h2 {

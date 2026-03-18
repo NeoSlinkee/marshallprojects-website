@@ -74,12 +74,13 @@
 <style>
   .areas-we-serve {
     background: linear-gradient(180deg, var(--bg-main) 0%, var(--aqua-light) 100%);
-    padding: 5rem 1.5rem;
+    padding: 5rem 0;
   }
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   .section-header {
@@ -218,7 +219,11 @@
 
   @media (max-width: 768px) {
     .areas-we-serve {
-      padding: 4rem 1.5rem;
+      padding: 4rem 0;
+    }
+
+    .container {
+      padding: 0 1.25rem;
     }
 
     h2 {

@@ -64,12 +64,13 @@
     background-repeat: no-repeat;
     color: white;
     position: relative;
-    padding: 5rem 1.5rem;
+    padding: 5rem 0;
   }
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   h2 {
@@ -147,7 +148,11 @@
 
   @media (max-width: 768px) {
     .why-choose {
-      padding: 4rem 1.5rem;
+      padding: 4rem 0;
+    }
+
+    .container {
+      padding: 0 1.25rem;
     }
 
     h2 {
