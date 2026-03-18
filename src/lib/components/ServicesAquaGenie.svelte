@@ -20,7 +20,7 @@
     { 
       title: 'Pool Heating', 
       description: 'Solar heating and heat pump installations to enjoy your pool year-round in any weather.',
-      image: '/images/services/pool-heating.jpg'
+      image: getCloudinaryUrl('pool-heating')
     },
     { 
       title: 'Pump Installations', 
