@@ -20,7 +20,7 @@
     { 
       title: 'Pool Heating', 
       description: 'Solar heating and heat pump installations to enjoy your pool year-round in any weather.',
-      image: getCloudinaryUrl('pool-heating')
+      image: '/images/gallery/pool-heating.jpg'
     },
     { 
       title: 'Pump Installations', 
@@ -30,7 +30,7 @@
     { 
       title: 'Filter Sand Changes', 
       description: 'Filter sand replacements and system upgrades to maintain crystal clear water quality.',
-      image: '/images/services/pool-sand-change.jpg'
+      image: '/images/gallery/pool-sand-change.jpg'
     }
   ];
 </script>
