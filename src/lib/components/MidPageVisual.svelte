@@ -9,7 +9,7 @@
     <div class="content-wrapper">
       <div class="visual-side">
         <img 
-          src="/images/misc/dual-service.jpg" 
+          src="/images/gallery/20250711_143331.jpg" 
           alt="Pool and property maintenance services"
           loading="lazy"
           on:error={(e) => e.target.parentElement.classList.add('image-error')}

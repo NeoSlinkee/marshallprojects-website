@@ -17,6 +17,7 @@ export const cloudinaryConfig = {
   // The tag used to identify gallery images in Cloudinary
   // When you upload images to Cloudinary, add this tag to include them in the gallery
   galleryTag: 'marshall-gallery',
+  maxImages: 12,
   
   // Image transformations (Cloudinary's automatic optimization)
   transforms: {
@@ -41,7 +42,7 @@ export function getCloudinaryUrl(publicId, transform = 'thumbnail') {
  * Returns null if Cloudinary is not configured
  */
 export async function fetchCloudinaryGallery() {
-  const { cloudName, galleryTag } = cloudinaryConfig;
+  const { cloudName, galleryTag, maxImages } = cloudinaryConfig;
   
   if (!cloudName) {
     console.log('Cloudinary not configured, using local images');
@@ -59,9 +60,13 @@ export async function fetchCloudinaryGallery() {
     }
     
     const data = await response.json();
-    
+    const resources = (data.resources || [])
+      .slice()
+      .sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0))
+      .slice(0, maxImages);
+
     // Transform Cloudinary response to our gallery format
-    return data.resources.map((resource, index) => ({
+    return resources.map((resource, index) => ({
       src: getCloudinaryUrl(resource.public_id, 'thumbnail'),
       srcLarge: getCloudinaryUrl(resource.public_id, 'lightbox'),
       alt: resource.context?.custom?.alt || `Gallery image ${index + 1}`,

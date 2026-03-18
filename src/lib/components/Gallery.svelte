@@ -7,18 +7,19 @@
   let galleryImages = [];
   let loading = true;
   let useCloudinary = false;
+  const maxGalleryImages = 12;
   
   onMount(async () => {
     if (isCloudinaryEnabled()) {
       const cloudinaryImages = await fetchCloudinaryGallery();
       if (cloudinaryImages && cloudinaryImages.length > 0) {
-        galleryImages = cloudinaryImages;
+        galleryImages = cloudinaryImages.slice(0, maxGalleryImages);
         useCloudinary = true;
       } else {
-        galleryImages = localGalleryData.images || [];
+        galleryImages = (localGalleryData.images || []).slice(0, maxGalleryImages);
       }
     } else {
-      galleryImages = localGalleryData.images || [];
+      galleryImages = (localGalleryData.images || []).slice(0, maxGalleryImages);
     }
     loading = false;
   });

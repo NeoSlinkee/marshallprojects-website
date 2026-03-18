@@ -3,32 +3,32 @@
     { 
       title: 'Interior & Exterior Painting', 
       description: 'Professional painting services for homes and properties, delivering quality finishes that last.',
-      image: '/images/services/painting.jpg'
+      image: '/images/services/handyman-work.jpg'
     },
     { 
       title: 'Waterproofing', 
       description: 'Expert waterproofing solutions for roofs, balconies, and walls to protect your property.',
-      image: '/images/services/waterproofing.jpg'
+      image: '/images/gallery/20250701_141607.jpg'
     },
     { 
       title: 'Damp Proofing', 
       description: 'Effective damp proofing treatments to eliminate moisture problems and protect your home.',
-      image: '/images/services/damp-proofing.jpg'
+      image: '/images/gallery/20250514_161421.jpg'
     },
     { 
       title: 'Roofing Maintenance', 
       description: 'Roof repairs, maintenance, and replacements to keep your property secure and weatherproof.',
-      image: '/images/services/roofing.jpg'
+      image: '/images/gallery/20251010_130513.jpg'
     },
     { 
       title: 'General Building Maintenance', 
       description: 'Comprehensive property maintenance services for homeowners, landlords, and tenants.',
-      image: '/images/services/building-maintenance.jpg'
+      image: '/images/gallery/IMG-20250527-WA0027.jpg'
     },
     { 
       title: 'Flooring Installation & Repairs', 
       description: 'Professional flooring installation and repair services for all types of residential flooring.',
-      image: '/images/services/flooring.jpg'
+      image: '/images/gallery/20250513_102653.jpg'
     }
   ];
 </script>

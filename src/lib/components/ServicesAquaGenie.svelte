@@ -8,27 +8,27 @@
     { 
       title: 'Pool Repairs', 
       description: 'Professional pool equipment repairs, leak detection, and structural repairs to keep your pool functioning perfectly.',
-      image: '/images/services/pool-repairs.jpg'
+      image: '/images/gallery/pool-2.jpg'
     },
     { 
       title: 'Pool Refurbishments', 
       description: 'Complete pool renovations including resurfacing, tiling, coping, and green-to-clean transformations.',
-      image: '/images/services/pool-refurbishment.jpg'
+      image: '/images/gallery/pool-3.jpg'
     },
     { 
       title: 'Pool Heating', 
       description: 'Solar heating and heat pump installations to enjoy your pool year-round in any weather.',
-      image: '/images/services/pool-heating.jpg'
+      image: '/images/gallery/pool-4.jpg'
     },
     { 
       title: 'Pump Installations', 
       description: 'New pump installations, replacements, and upgrades for energy-efficient pool circulation.',
-      image: '/images/services/pump-installation.jpg'
+      image: '/images/gallery/pool-5.jpg'
     },
     { 
       title: 'Filter Sand Changes', 
       description: 'Filter sand replacements and system upgrades to maintain crystal clear water quality.',
-      image: '/images/services/filter-sand.jpg'
+      image: '/images/gallery/pool-6.jpg'
     }
   ];
 </script>
