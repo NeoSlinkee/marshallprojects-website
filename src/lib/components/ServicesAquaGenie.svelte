@@ -1,9 +1,11 @@
 <script>
+  import { getCloudinaryUrl } from '$lib/cloudinary.js';
+
   const services = [
     { 
       title: 'Pool Maintenance', 
       description: 'Weekly and monthly pool servicing, water balancing, and chemical testing for optimal pool health.',
-      image: '/images/services/pool-maintenance.jpg'
+      image: getCloudinaryUrl('clear-blue-pool')
     },
     { 
       title: 'Pool Repairs', 
@@ -18,17 +20,17 @@
     { 
       title: 'Pool Heating', 
       description: 'Solar heating and heat pump installations to enjoy your pool year-round in any weather.',
-      image: '/images/gallery/pool-4.jpg'
+      image: '/images/services/pool-heating.jpg'
     },
     { 
       title: 'Pump Installations', 
       description: 'New pump installations, replacements, and upgrades for energy-efficient pool circulation.',
-      image: '/images/gallery/pool-5.jpg'
+      image: getCloudinaryUrl('pump-installation')
     },
     { 
       title: 'Filter Sand Changes', 
       description: 'Filter sand replacements and system upgrades to maintain crystal clear water quality.',
-      image: '/images/gallery/pool-6.jpg'
+      image: '/images/services/pool-sand-change.jpg'
     }
   ];
 </script>
