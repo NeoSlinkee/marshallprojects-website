@@ -59,7 +59,10 @@
         <img 
           src="/images/maps/gauteng-service-area.jpg"
           alt="Map showing service areas across Gauteng including Randburg, Sandton, Fourways and surrounding suburbs"
+          width="600"
+          height="400"
           loading="lazy"
+          decoding="async"
           class="map-image"
         />
         <div class="map-fallback">
@@ -74,7 +77,7 @@
 <style>
   .areas-we-serve {
     background: linear-gradient(180deg, var(--bg-main) 0%, var(--aqua-light) 100%);
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 
   .container {
@@ -85,7 +88,7 @@
 
   .section-header {
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
   }
 
   h2 {

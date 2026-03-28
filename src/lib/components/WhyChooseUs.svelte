@@ -57,14 +57,10 @@
 <style>
   .why-choose {
     background: 
-      linear-gradient(135deg, rgba(74, 74, 74, 0.95) 0%, rgba(47, 47, 47, 0.97) 100%),
-      url('/images/misc/worker-hands.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+      linear-gradient(135deg, rgba(74, 74, 74, 0.95) 0%, rgba(47, 47, 47, 0.97) 100%);
     color: white;
     position: relative;
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 
   .container {
@@ -84,7 +80,7 @@
     text-align: center;
     font-size: 1.2rem;
     max-width: 700px;
-    margin: 0 auto 3.5rem;
+    margin: 0 auto 2.5rem;
     opacity: 0.95;
   }
 

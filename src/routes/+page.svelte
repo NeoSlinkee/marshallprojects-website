@@ -16,21 +16,13 @@
 </script>
 
 <svelte:head>
-  <title>Pool & Home Maintenance Gauteng | Aqua-Genie & Marshall Projects</title>
-  <meta 
-    name="description" 
-    content="Professional swimming pool maintenance and handyman services in Gauteng, South Africa. Aqua-Genie pool services and Marshall Projects property maintenance - reliable, trusted, local."
+  <!-- Preload critical hero image for LCP optimization -->
+  <link 
+    rel="preload" 
+    as="image" 
+    href="/images/hero/hero-pool.jpg"
+    fetchpriority="high"
   />
-  <meta name="keywords" content="pool maintenance Gauteng, handyman Johannesburg, pool repairs Randburg, home maintenance Sandton, property services Fourways, pool cleaning Bryanston, Aqua-Genie, Marshall Projects" />
-  
-  <!-- Open Graph / Social Media -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Pool & Home Maintenance Gauteng | Aqua-Genie & Marshall Projects" />
-  <meta property="og:description" content="Professional swimming pool maintenance and handyman services in Gauteng. Reliable, trusted, local service." />
-  <meta property="og:url" content="https://marshallprojects.co.za" />
-  
-  <!-- Responsive -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
 <main>

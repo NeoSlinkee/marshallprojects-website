@@ -36,7 +36,7 @@
 <style>
   .about {
     background: var(--bg-main);
-    padding: 5rem 0;
+    padding: 3.5rem 0;
   }
 
   .container {
@@ -130,7 +130,7 @@
 
   @media (max-width: 768px) {
     .about {
-      padding: 4rem 0;
+      padding: 2.5rem 0;
     }
 
     .container {

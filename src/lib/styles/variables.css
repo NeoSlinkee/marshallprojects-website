@@ -53,6 +53,11 @@ body {
   font-weight: 400;
 }
 
+/* Ensure phone photos display with correct orientation */
+img {
+  image-orientation: from-image;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   line-height: 1.2;

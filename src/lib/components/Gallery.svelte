@@ -77,7 +77,10 @@
               <img 
                 src={image.src} 
                 alt={image.alt}
+                width="400"
+                height="300"
                 loading="lazy"
+                decoding="async"
                 on:error={(e) => e.target.style.display = 'none'}
               />
               <div class="image-overlay">
@@ -125,7 +128,7 @@
 <style>
   .gallery {
     background: var(--bg-main);
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 
   .container {
@@ -136,7 +139,7 @@
 
   .section-header {
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
   }
 
   h2 {

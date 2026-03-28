@@ -15,8 +15,7 @@
     formStatus = 'submitting';
     
     try {
-      // Using Formspree - replace YOUR_FORM_ID with actual Formspree form ID
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/mnjojoql', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -162,7 +161,7 @@
 <style>
   .contact {
     background: linear-gradient(180deg, var(--aqua-light) 0%, var(--bg-main) 100%);
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 
   .container {
@@ -182,7 +181,7 @@
   .intro {
     text-align: center;
     font-size: 1.1rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
     color: var(--mp-secondary);
   }
 

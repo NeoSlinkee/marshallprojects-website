@@ -1,165 +1,75 @@
 {
   "images": [
     {
-      "src": "/images/gallery/Roof Ads IMG_0729.jpg",
-      "alt": "Gallery image 27",
-      "caption": "Service Project",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/pool-maintenance.jpg",
-      "alt": "Gallery image 26",
-      "caption": "Service Project",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/pool-6.jpg",
-      "alt": "Complete pool service",
-      "caption": "Full Service",
-      "location": "Bryanston"
-    },
-    {
-      "src": "/images/gallery/pool-5.jpg",
-      "alt": "Pool lighting installation",
-      "caption": "Lighting Install",
+      "src": "/images/gallery/pool-1.jpg",
+      "alt": "Pool renovation with new tiling and refurbished coping in Randburg",
+      "caption": "Pool Renovation",
       "location": "Randburg"
     },
     {
-      "src": "/images/gallery/pool-4.jpg",
-      "alt": "Green to clean transformation",
-      "caption": "Green to Clean",
-      "location": "Fourways"
-    },
-    {
-      "src": "/images/gallery/pool-3.jpg",
-      "alt": "Pool refurbishment complete",
-      "caption": "Refurbishment",
-      "location": "Sandton"
-    },
-    {
       "src": "/images/gallery/pool-2.jpg",
-      "alt": "Crystal clear pool water",
+      "alt": "Crystal clear pool water after chemical treatment and balancing",
       "caption": "Water Treatment",
       "location": "Bryanston"
     },
     {
-      "src": "/images/gallery/pool-1.jpg",
-      "alt": "Pool renovation project",
+      "src": "/images/gallery/pool-3.jpg",
+      "alt": "Complete pool refurbishment with new surface and fittings",
+      "caption": "Pool Refurbishment",
+      "location": "Sandton"
+    },
+    {
+      "src": "/images/gallery/pool-4.jpg",
+      "alt": "Green to clean pool transformation in Fourways",
+      "caption": "Green to Clean",
+      "location": "Fourways"
+    },
+    {
+      "src": "/images/gallery/20250130_125016.jpg",
+      "alt": "Pool renovation project showing completed tiling and finishes",
       "caption": "Pool Renovation",
-      "location": "Randburg"
-    },
-    {
-      "src": "/images/gallery/Pics for Ads SAM_1362.jpg",
-      "alt": "Gallery image 19",
-      "caption": "Service Project",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/New Pool Ad for Michael IMG-20250421-WA0014 (002).jpg",
-      "alt": "Gallery image 18",
-      "caption": "Service Project",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/IMG-20251204-WA0015.jpg",
-      "alt": "Gallery image 17",
-      "caption": "Service Project",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/IMG-20250527-WA0027.jpg",
-      "alt": "Gallery image 16",
-      "caption": "Service Project",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/IMG-20220513-WA0043.jpg",
-      "alt": "Gallery image 15",
-      "caption": "Service Project",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/IMG-20211109-WA0011.jpg",
-      "alt": "Gallery image 14",
-      "caption": "Service Project",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/handyman-work.jpg",
-      "alt": "Gallery image 13",
-      "caption": "Service Project",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/20251010_130513.jpg",
-      "alt": "Gallery image 12",
-      "caption": "Service Project",
       "location": "Gauteng"
     },
     {
       "src": "/images/gallery/20250711_143331.jpg",
-      "alt": "Pool maintenance work",
+      "alt": "Pool maintenance work including filter and pump servicing",
       "caption": "Pool Service",
       "location": "Gauteng"
     },
     {
+      "src": "/images/gallery/Roof Ads IMG_0729.jpg",
+      "alt": "Professional roof maintenance and repair work",
+      "caption": "Roof Maintenance",
+      "location": "Gauteng"
+    },
+    {
       "src": "/images/gallery/20250701_141607.jpg",
-      "alt": "Property maintenance project",
-      "caption": "Property Work",
+      "alt": "Waterproofing application on residential property",
+      "caption": "Waterproofing",
       "location": "Gauteng"
     },
     {
       "src": "/images/gallery/20250514_161421.jpg",
-      "alt": "Professional service work",
-      "caption": "Service Project",
+      "alt": "Damp proofing treatment on interior wall",
+      "caption": "Damp Proofing",
       "location": "Gauteng"
     },
     {
-      "src": "/images/gallery/20250514_083627.jpg",
-      "alt": "Gallery image 8",
-      "caption": "Service Project",
+      "src": "/images/gallery/20251010_130513.jpg",
+      "alt": "Roofing repair and maintenance on tiled roof",
+      "caption": "Roofing Repair",
       "location": "Gauteng"
     },
     {
-      "src": "/images/gallery/20250514_083555.jpg",
-      "alt": "Maintenance project",
-      "caption": "Maintenance",
+      "src": "/images/gallery/IMG-20250527-WA0027.jpg",
+      "alt": "General building maintenance and repair work",
+      "caption": "Building Maintenance",
       "location": "Gauteng"
     },
     {
       "src": "/images/gallery/20250513_102653.jpg",
-      "alt": "Gallery image 6",
-      "caption": "Service Project",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/20250130_125016.jpg",
-      "alt": "Pool renovation",
-      "caption": "Pool Renovation",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/20241119_143008.jpg",
-      "alt": "Property service",
-      "caption": "Property Service",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/20241117_152545.jpg",
-      "alt": "Pool work completed",
-      "caption": "Pool Work",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/20241117_111907.jpg",
-      "alt": "Service project",
-      "caption": "Service Project",
-      "location": "Gauteng"
-    },
-    {
-      "src": "/images/gallery/20240228_131219.jpg",
-      "alt": "Gallery image 1",
-      "caption": "Service Project",
+      "alt": "Professional flooring installation in residential property",
+      "caption": "Flooring Installation",
       "location": "Gauteng"
     }
   ]

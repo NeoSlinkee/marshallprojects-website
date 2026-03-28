@@ -1,5 +1,5 @@
 <script>
-  const whatsappNumber = '27792281033';
+  const whatsappNumber = '27714843047';
   const message = encodeURIComponent("Hello, I'd like to enquire about your services.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
   

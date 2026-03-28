@@ -11,7 +11,10 @@
         <img 
           src="/images/gallery/20250711_143331.jpg" 
           alt="Pool and property maintenance services"
+          width="600"
+          height="450"
           loading="lazy"
+          decoding="async"
           on:error={(e) => e.target.parentElement.classList.add('image-error')}
         />
         <div class="visual-fallback">
@@ -41,7 +44,7 @@
 <style>
   .mid-page-visual {
     background: linear-gradient(135deg, var(--aqua-tint) 0%, var(--mp-light) 100%);
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 
   .container {

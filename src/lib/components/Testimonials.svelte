@@ -50,7 +50,7 @@
 <style>
   .testimonials {
     background: var(--bg-main);
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 
   .container {
@@ -61,7 +61,7 @@
 
   .section-header {
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
   }
 
   h2 {

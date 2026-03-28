@@ -7,12 +7,14 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "update-gallery": "node scripts/update-gallery.js"
+    "update-gallery": "node scripts/update-gallery.js",
+    "optimize-images": "node scripts/optimize-images.js"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.1",
     "@sveltejs/kit": "^2.5.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
+    "sharp": "^0.33.5",
     "svelte": "^4.2.8",
     "vite": "^5.0.11"
   }

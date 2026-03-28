@@ -1,4 +1,8 @@
 <script>
+  import { onMount } from 'svelte';
+  
+  let heroImageLoaded = false;
+  
   function scrollToContact() {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   }
@@ -6,14 +10,34 @@
   function scrollToGallery() {
     document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' });
   }
+  
+  function handleHeroImageLoad() {
+    heroImageLoaded = true;
+  }
 </script>
 
 <section class="hero-wrapper">
   <div class="hero-panel">
     <div class="hero-content">
       <div class="logos">
-        <img src="/images/aquagenie-logo.svg" alt="Aqua-Genie Logo" class="logo" />
-        <img src="/images/marshallprojects-logo.svg" alt="Marshall Projects Logo" class="logo" />
+        <img 
+          src="/images/aquagenie-logo.svg" 
+          alt="Aqua-Genie Logo" 
+          class="logo"
+          width="120"
+          height="80"
+          loading="eager"
+          decoding="async"
+        />
+        <img 
+          src="/images/marshallprojects-logo.svg" 
+          alt="Marshall Projects Logo" 
+          class="logo"
+          width="120"
+          height="80"
+          loading="eager"
+          decoding="async"
+        />
       </div>
       <h1>
         <span class="headline-main">Professional Home, Handyman</span>
@@ -34,7 +58,18 @@
       </div>
     </div>
   </div>
-  <div class="hero-side-image" aria-hidden="true">
+  <div class="hero-side-image" class:loaded={heroImageLoaded} aria-hidden="true">
+    <img 
+      src="/images/hero/hero-pool.jpg"
+      alt="Pool maintenance services"
+      class="hero-image"
+      width="960"
+      height="720"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+      on:load={handleHeroImageLoad}
+    />
     <div class="image-overlay"></div>
   </div>
   <div class="diagonal-divider"></div>
@@ -70,10 +105,21 @@
   }
 
   .hero-side-image {
-    background-image: url('/images/hero/hero-pool.jpg');
-    background-size: cover;
-    background-position: center;
     position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--aqua-primary) 0%, var(--aqua-secondary) 100%);
+  }
+  
+  .hero-side-image .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .hero-side-image.loaded .hero-image {
+    opacity: 1;
   }
 
   .image-overlay {

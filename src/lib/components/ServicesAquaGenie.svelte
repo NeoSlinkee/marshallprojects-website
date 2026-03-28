@@ -23,7 +23,7 @@
     { 
       title: 'Pump Installations', 
       description: 'New pump installations, replacements, and upgrades for energy-efficient pool circulation.',
-      image: '/images/gallery/pool-5.jpg'
+      image: '/images/gallery/pool-4.jpg'
     },
     { 
       title: 'Filter Sand Changes', 
@@ -52,7 +52,10 @@
             <img 
               src={service.image} 
               alt={service.title}
+              width="400"
+              height="250"
               loading="lazy"
+              decoding="async"
               on:error={(e) => e.target.parentElement.classList.add('image-error')}
             />
             <div class="image-overlay"></div>
@@ -75,7 +78,7 @@
 <style>
   .services-aqua {
     background: linear-gradient(180deg, var(--aqua-light), var(--aqua-tint));
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 
   .container {
@@ -104,7 +107,7 @@
 
   .intro {
     max-width: 700px;
-    margin: 0 auto 3.5rem;
+    margin: 0 auto 2.5rem;
     text-align: center;
     font-size: 1.1rem;
     line-height: 1.8;
