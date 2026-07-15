@@ -20,18 +20,18 @@
   <div class="hero-panel">
     <div class="hero-content">
       <div class="logos">
-        <img 
-          src="/images/aquagenie-logo.svg" 
-          alt="Aqua-Genie Logo" 
+        <img
+          src="/images/aquagenie-logo-optimized.webp"
+          alt="Aqua-Genie Logo"
           class="logo"
           width="120"
           height="80"
           loading="eager"
           decoding="async"
         />
-        <img 
-          src="/images/marshallprojects-logo.svg" 
-          alt="Marshall Projects Logo" 
+        <img
+          src="/images/marshallprojects-logo-optimized.webp"
+          alt="Marshall Projects Logo"
           class="logo"
           width="120"
           height="80"

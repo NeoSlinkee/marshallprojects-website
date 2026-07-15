@@ -68,7 +68,7 @@
           <div class="contact-item">
             <strong>WhatsApp:</strong>
             <a 
-              href="https://wa.me/27714843047?text=Hello,%20I'd%20like%20to%20enquire%20about%20your%20services." 
+              href="https://wa.me/27792281033?text=Hello,%20I'd%20like%20to%20enquire%20about%20your%20services."
               target="_blank" 
               rel="noopener noreferrer"
               class="whatsapp-link"

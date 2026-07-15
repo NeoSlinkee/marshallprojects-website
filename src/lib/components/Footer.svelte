@@ -22,7 +22,7 @@
     <div class="footer-section">
       <h4>Contact</h4>
       <ul>
-        <li><a href="tel:+27714843047">+27 (0)71 484 3047</a></li>
+        <li><a href="tel:+27792281033">+27 (0)79 228 1033</a></li>
         <li><a href="mailto:gautengprojects@gmail.com">gautengprojects@gmail.com</a></li>
         <li><a href="mailto:aquageniepools@gmail.com">aquageniepools@gmail.com</a></li>
       </ul>
