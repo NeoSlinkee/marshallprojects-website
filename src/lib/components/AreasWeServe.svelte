@@ -107,7 +107,7 @@
   .areas-container {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 4rem;
+    gap: 3rem;
     align-items: center;
   }
 

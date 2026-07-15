@@ -79,7 +79,7 @@
   .hero-wrapper {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
-    min-height: 75vh;
+    min-height: 60vh;
     position: relative;
   }
 
@@ -87,7 +87,7 @@
     background: linear-gradient(135deg, rgba(27, 111, 174, 1) 0%, rgba(45, 169, 225, 0.95) 100%);
     color: white;
     text-align: center;
-    padding: 5rem 3rem;
+    padding: 4rem 3rem;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -23,7 +23,7 @@
     { 
       title: 'General Building Maintenance', 
       description: 'Comprehensive property maintenance services for homeowners, landlords, and tenants.',
-      image: '/images/gallery/IMG-20250527-WA0027.jpg'
+      image: '/images/gallery/20240228_131219.jpg'
     },
     { 
       title: 'Flooring Installation & Repairs', 
