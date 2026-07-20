@@ -128,7 +128,7 @@
 <style>
   .gallery {
     background: var(--bg-main);
-    padding: 4rem 0;
+    padding: 3.5rem 0;
   }
 
   .container {

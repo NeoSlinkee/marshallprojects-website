@@ -78,7 +78,7 @@
 <style>
   .services-aqua {
     background: linear-gradient(180deg, var(--aqua-light), var(--aqua-tint));
-    padding: 4rem 0;
+    padding: 3.5rem 0;
   }
 
   .container {

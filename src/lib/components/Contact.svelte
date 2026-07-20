@@ -53,29 +53,37 @@
       <div class="contact-container">
         <div class="contact-details">
           <h3>Get In Touch</h3>
-          
+
           <div class="contact-item">
-            <strong>Phone:</strong>
-            <a href="tel:+27792281033">+27 (0)79 228 1033</a>
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+27792281033">+27 (0)79 228 1033</a>
+            </div>
           </div>
 
           <div class="contact-item">
-            <strong>Email:</strong>
-            <a href="mailto:gautengprojects@gmail.com">gautengprojects@gmail.com</a>
-            <a href="mailto:aquageniepools@gmail.com">aquageniepools@gmail.com</a>
+            <span class="contact-icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:gautengprojects@gmail.com">gautengprojects@gmail.com</a>
+              <a href="mailto:aquageniepools@gmail.com">aquageniepools@gmail.com</a>
+            </div>
           </div>
 
           <div class="contact-item">
-            <strong>WhatsApp:</strong>
-            <a 
-              href="https://wa.me/27792281033?text=Hello,%20I'd%20like%20to%20enquire%20about%20your%20services."
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="whatsapp-link"
-            >
-              <span class="whatsapp-icon">💬</span>
-              Chat with us on WhatsApp
-            </a>
+            <span class="contact-icon">💬</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <a
+                href="https://wa.me/27792281033?text=Hello,%20I'd%20like%20to%20enquire%20about%20your%20services."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="whatsapp-link"
+              >
+                Chat with us on WhatsApp
+              </a>
+            </div>
           </div>
         </div>
 
@@ -161,7 +169,7 @@
 <style>
   .contact {
     background: linear-gradient(180deg, var(--aqua-light) 0%, var(--bg-main) 100%);
-    padding: 4rem 0;
+    padding: 3.5rem 0;
   }
 
   .container {
@@ -197,12 +205,13 @@
     align-items: start;
   }
 
-  .contact-details, 
+  .contact-details,
   .contact-form-container {
     background: white;
     padding: 2.25rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
+    border-top: 4px solid var(--aqua-primary);
     height: 100%;
   }
 
@@ -221,18 +230,40 @@
     padding: 2rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
+    border-top: 4px solid var(--aqua-primary);
     height: fit-content;
   }
 
   .contact-item {
     display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .contact-icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    border-radius: 50%;
+    background: var(--accent-gradient);
+    box-shadow: 0 8px 18px rgba(45, 169, 225, 0.3);
+  }
+
+  .contact-item > div {
+    display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem;
   }
 
   .contact-item strong {
     color: var(--mp-secondary);
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
   }
 
   .contact-item a {
@@ -251,10 +282,6 @@
     align-items: center;
     gap: 0.5rem;
     font-weight: 600;
-  }
-
-  .whatsapp-icon {
-    font-size: 1.2rem;
   }
 
   .contact-form {

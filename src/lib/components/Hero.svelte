@@ -1,18 +1,10 @@
 <script>
-  import { onMount } from 'svelte';
-  
-  let heroImageLoaded = false;
-  
   function scrollToContact() {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   }
-  
+
   function scrollToGallery() {
     document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' });
-  }
-  
-  function handleHeroImageLoad() {
-    heroImageLoaded = true;
   }
 </script>
 
@@ -58,8 +50,8 @@
       </div>
     </div>
   </div>
-  <div class="hero-side-image" class:loaded={heroImageLoaded} aria-hidden="true">
-    <img 
+  <div class="hero-side-image" aria-hidden="true">
+    <img
       src="/images/hero/hero-pool.jpg"
       alt="Pool maintenance services"
       class="hero-image"
@@ -68,7 +60,6 @@
       loading="eager"
       decoding="async"
       fetchpriority="high"
-      on:load={handleHeroImageLoad}
     />
     <div class="image-overlay"></div>
   </div>
@@ -114,12 +105,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-  }
-  
-  .hero-side-image.loaded .hero-image {
-    opacity: 1;
   }
 
   .image-overlay {
@@ -153,23 +138,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     margin-bottom: 2.5rem;
     flex-wrap: wrap;
   }
 
   .logo {
-    height: 80px;
+    height: 96px;
     width: auto;
     background: white;
-    padding: 1rem;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
-    transition: transform var(--transition-base);
+    padding: 0.85rem 1.25rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 3px solid rgba(255, 255, 255, 0.35);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
   }
 
   .logo:hover {
-    transform: scale(1.05);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 26px 50px rgba(10, 30, 45, 0.28);
   }
 
   h1 {
@@ -286,11 +273,12 @@
     }
 
     .logo {
-      height: 60px;
+      height: 68px;
+      padding: 0.65rem 0.9rem;
     }
 
     .logos {
-      gap: 1.5rem;
+      gap: 1.25rem;
       margin-bottom: 2rem;
     }
 

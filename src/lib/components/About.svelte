@@ -49,7 +49,7 @@
     font-size: 2.5rem;
     color: var(--mp-primary);
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: 700;
   }
 
@@ -60,7 +60,7 @@
   }
 
   .about-content > p {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 1.1rem;
     margin-left: auto;
     margin-right: auto;
@@ -70,13 +70,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin: 3rem 0;
+    margin: 2rem 0;
   }
 
   .division {
     padding: 2rem;
     border-radius: var(--radius-lg);
-    background: white;
+    background: linear-gradient(180deg, #ffffff 0%, var(--aqua-light) 130%);
     border-left: 4px solid var(--aqua-primary);
     box-shadow: var(--shadow-md);
     transition: all var(--transition-base);

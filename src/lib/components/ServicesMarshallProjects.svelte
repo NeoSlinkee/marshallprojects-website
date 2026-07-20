@@ -5,30 +5,34 @@
       description: 'Professional painting services for homes and properties, delivering quality finishes that last.',
       image: '/images/services/handyman-work.jpg'
     },
-    { 
-      title: 'Waterproofing', 
+    {
+      title: 'Waterproofing',
       description: 'Expert waterproofing solutions for roofs, balconies, and walls to protect your property.',
-      image: '/images/gallery/20250701_141607.jpg'
+      image: '/images/gallery/Roof Ads IMG_0729.jpg'
     },
-    { 
-      title: 'Damp Proofing', 
+    {
+      title: 'Damp Proofing',
       description: 'Effective damp proofing treatments to eliminate moisture problems and protect your home.',
-      image: '/images/gallery/20250514_161421.jpg'
+      image: null,
+      fallbackIcon: '💧'
     },
-    { 
-      title: 'Roofing Maintenance', 
+    {
+      title: 'Roofing Maintenance',
       description: 'Roof repairs, maintenance, and replacements to keep your property secure and weatherproof.',
-      image: '/images/gallery/20251010_130513.jpg'
+      image: null,
+      fallbackIcon: '🏠'
     },
-    { 
-      title: 'General Building Maintenance', 
+    {
+      title: 'General Building Maintenance',
       description: 'Comprehensive property maintenance services for homeowners, landlords, and tenants.',
-      image: '/images/gallery/20240228_131219.jpg'
+      image: null,
+      fallbackIcon: '🔧'
     },
-    { 
-      title: 'Flooring Installation & Repairs', 
+    {
+      title: 'Flooring Installation & Repairs',
       description: 'Professional flooring installation and repair services for all types of residential flooring.',
-      image: '/images/gallery/20250513_102653.jpg'
+      image: null,
+      fallbackIcon: '🪵'
     }
   ];
 </script>
@@ -48,19 +52,21 @@
     <div class="services-grid">
       {#each services as service}
         <div class="service-card">
-          <div class="service-image-wrapper">
-            <img 
-              src={service.image} 
-              alt={service.title}
-              width="400"
-              height="250"
-              loading="lazy"
-              decoding="async"
-              on:error={(e) => e.target.parentElement.classList.add('image-error')}
-            />
-            <div class="image-overlay"></div>
+          <div class="service-image-wrapper" class:image-error={!service.image}>
+            {#if service.image}
+              <img
+                src={service.image}
+                alt={service.title}
+                width="400"
+                height="250"
+                loading="lazy"
+                decoding="async"
+                on:error={(e) => e.target.parentElement.classList.add('image-error')}
+              />
+              <div class="image-overlay"></div>
+            {/if}
             <div class="service-fallback">
-              <span class="fallback-icon">🔨</span>
+              <span class="fallback-icon">{service.fallbackIcon || '🔨'}</span>
             </div>
           </div>
           <div class="service-content">
@@ -76,7 +82,7 @@
 <style>
   .services-marshall {
     background: var(--mp-light);
-    padding: 4rem 0;
+    padding: 3.5rem 0;
   }
 
   .container {

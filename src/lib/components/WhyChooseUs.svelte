@@ -60,7 +60,7 @@
       linear-gradient(135deg, rgba(74, 74, 74, 0.95) 0%, rgba(47, 47, 47, 0.97) 100%);
     color: white;
     position: relative;
-    padding: 4rem 0;
+    padding: 3.5rem 0;
   }
 
   .container {
@@ -108,19 +108,20 @@
   }
 
   .icon-wrapper {
-    width: 56px;
-    height: 56px;
-    background: rgba(45, 169, 225, 0.2);
-    border-radius: var(--radius-md);
+    width: 60px;
+    height: 60px;
+    background: var(--accent-gradient);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.25rem;
-    border: 2px solid rgba(45, 169, 225, 0.3);
+    box-shadow: 0 10px 22px rgba(45, 169, 225, 0.35);
   }
 
   .reason-icon {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.15));
   }
 
   h3 {
@@ -165,8 +166,8 @@
     }
 
     .icon-wrapper {
-      width: 48px;
-      height: 48px;
+      width: 52px;
+      height: 52px;
     }
 
     .reason-icon {

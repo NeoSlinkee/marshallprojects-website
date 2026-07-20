@@ -77,7 +77,7 @@
 <style>
   .areas-we-serve {
     background: linear-gradient(180deg, var(--bg-main) 0%, var(--aqua-light) 100%);
-    padding: 4rem 0;
+    padding: 3.5rem 0;
   }
 
   .container {

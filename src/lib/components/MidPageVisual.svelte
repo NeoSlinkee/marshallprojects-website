@@ -44,7 +44,7 @@
 <style>
   .mid-page-visual {
     background: linear-gradient(135deg, var(--aqua-tint) 0%, var(--mp-light) 100%);
-    padding: 4rem 0;
+    padding: 3.5rem 0;
   }
 
   .container {
