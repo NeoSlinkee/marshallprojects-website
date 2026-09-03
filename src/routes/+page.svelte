@@ -6,7 +6,7 @@
   import MidPageVisual from '$lib/components/MidPageVisual.svelte';
   import AreasWeServe from '$lib/components/AreasWeServe.svelte';
   import ServicesMarshallProjects from '$lib/components/ServicesMarshallProjects.svelte';
-  import Testimonials from '$lib/components/Testimonials.svelte';
+  import GoogleReviews from '$lib/components/GoogleReviews.svelte';
   import WhyChooseUs from '$lib/components/WhyChooseUs.svelte';
   import Contact from '$lib/components/Contact.svelte';
   import { SITE } from '$lib/config/site.js';
@@ -40,7 +40,7 @@
 <Gallery />
 <MidPageVisual />
 <ServicesMarshallProjects />
-<Testimonials />
+<GoogleReviews />
 <AreasWeServe />
 <WhyChooseUs />
 <Contact />

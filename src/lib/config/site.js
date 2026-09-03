@@ -42,8 +42,36 @@ export const GOOGLE = {
   placeId: '', // e.g. 'ChIJ...'
   reviewsUrl: '', // public "read reviews" link to the Business Profile
   writeReviewUrl: '', // "write a review" deep link (…/review?placeid=…)
-  placesApiKey: '' // optional, browser-restricted, for live review pull
+  placesApiKey: '', // optional, browser-restricted, for live review pull
+  // Optional manual aggregate to display + emit in schema BEFORE live pull is
+  // wired. Only set these to real, verifiable numbers from the Business Profile
+  // (Google's rich-result policy requires genuine review data).
+  ratingValue: '', // e.g. '4.9'
+  reviewCount: '' // e.g. '27'
 };
+
+// Curated client reviews shown until live Google reviews are wired up.
+// These mirror the on-site testimonials — they are NOT presented as Google reviews.
+export const curatedReviews = [
+  {
+    name: 'Lerato M.',
+    location: 'Randburg',
+    rating: 5,
+    text: 'Excellent pool maintenance service. Reliable and always on time. My pool has never looked better!'
+  },
+  {
+    name: 'David K.',
+    location: 'Bryanston',
+    rating: 5,
+    text: 'Professional handyman services. They transformed my green pool and fixed several issues around the house. Highly recommend!'
+  },
+  {
+    name: 'Sarah P.',
+    location: 'Sandton',
+    rating: 5,
+    text: 'Trustworthy and efficient. They handle both our pool and property maintenance with excellent results every time.'
+  }
+];
 
 // ---------------------------------------------------------------------------
 // Services — Aqua-Genie (pool) division

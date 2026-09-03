@@ -37,6 +37,13 @@ export function localBusiness() {
   };
   if (GOOGLE.placeId) node.hasMap = 'https://www.google.com/maps/place/?q=place_id:' + GOOGLE.placeId;
   if (GOOGLE.reviewsUrl) node.sameAs = [GOOGLE.reviewsUrl];
+  if (GOOGLE.ratingValue && GOOGLE.reviewCount) {
+    node.aggregateRating = {
+      '@type': 'AggregateRating',
+      ratingValue: GOOGLE.ratingValue,
+      reviewCount: GOOGLE.reviewCount
+    };
+  }
   return node;
 }
 
