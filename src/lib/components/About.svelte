@@ -1,9 +1,10 @@
 <script>
+  export let showHeading = true;
 </script>
 
 <section class="about">
   <div class="container">
-    <h2>About Us</h2>
+    {#if showHeading}<h2>About Us</h2>{/if}
     <div class="about-content">
       <p>
         <strong>Marshall Projects & Protective Coatings CC</strong> operates two specialised 

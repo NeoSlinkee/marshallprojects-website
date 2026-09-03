@@ -31,11 +31,13 @@
       icon: '🤝'
     }
   ];
+
+  export let showHeading = true;
 </script>
 
 <section class="why-choose">
   <div class="container">
-    <h2>Why Choose Us</h2>
+    {#if showHeading}<h2>Why Choose Us</h2>{/if}
     <p class="intro">
       We believe in doing the job properly the first time and building long-term relationships with our clients.
     </p>

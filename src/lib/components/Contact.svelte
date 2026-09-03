@@ -322,23 +322,23 @@
   }
 
   .submit-button {
-    background: var(--aqua-primary);
-    color: white;
+    background: var(--accent);
+    color: var(--accent-fg);
     padding: 1rem 2.5rem;
     border: none;
     border-radius: var(--radius-md);
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     transition: all var(--transition-base);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 8px 20px rgba(234, 88, 12, 0.25);
     align-self: start;
   }
 
   .submit-button:hover:not(:disabled) {
-    background: var(--aqua-secondary);
+    background: var(--accent-hover);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 12px 26px rgba(234, 88, 12, 0.32);
   }
 
   .submit-button:active:not(:disabled) {

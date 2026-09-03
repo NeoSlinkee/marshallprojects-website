@@ -207,16 +207,18 @@
   }
 
   .cta-primary {
-    background: white;
-    color: var(--aqua-secondary);
-    box-shadow: var(--shadow-md);
+    background: var(--accent);
+    color: var(--accent-fg);
+    border-color: var(--accent);
+    box-shadow: 0 10px 24px rgba(234, 88, 12, 0.35);
   }
 
   .cta-primary:hover {
-    background: transparent;
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
     color: white;
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 14px 30px rgba(234, 88, 12, 0.4);
   }
 
   .cta-secondary {

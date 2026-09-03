@@ -33,7 +33,7 @@
   </div>
 </section>
 
-<About />
+<About showHeading={false} />
 
 <section class="section tint">
   <div class="container-narrow prose">

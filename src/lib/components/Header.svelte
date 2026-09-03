@@ -274,8 +274,8 @@
   }
 
   .cta-quote {
-    background: var(--aqua-primary);
-    color: white;
+    background: var(--accent);
+    color: var(--accent-fg);
     padding: 0.6rem 1.4rem;
     border-radius: var(--radius-md);
     text-decoration: none;
@@ -283,12 +283,12 @@
     font-size: 0.95rem;
     transition: all var(--transition-base);
     white-space: nowrap;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 6px 16px rgba(234, 88, 12, 0.25);
   }
   .cta-quote:hover {
-    background: var(--aqua-secondary);
+    background: var(--accent-hover);
     transform: translateY(-1px);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 10px 22px rgba(234, 88, 12, 0.3);
   }
 
   .hamburger {

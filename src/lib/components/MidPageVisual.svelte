@@ -118,25 +118,25 @@
   }
 
   .cta-button {
-    background: var(--aqua-primary);
-    color: white;
-    border: 2px solid var(--aqua-primary);
+    background: var(--accent);
+    color: var(--accent-fg);
+    border: 2px solid var(--accent);
     padding: 1rem 2.5rem;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: var(--radius-md);
     cursor: pointer;
     transition: all var(--transition-base);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 8px 20px rgba(234, 88, 12, 0.28);
     font-family: inherit;
     align-self: flex-start;
   }
 
   .cta-button:hover {
-    background: var(--aqua-secondary);
-    border-color: var(--aqua-secondary);
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 12px 26px rgba(234, 88, 12, 0.34);
   }
 
   .cta-button:active {

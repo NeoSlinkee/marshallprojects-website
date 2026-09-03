@@ -31,7 +31,7 @@
   </div>
 </section>
 
-<WhyChooseUs />
+<WhyChooseUs showHeading={false} />
 
 <section class="section">
   <div class="container-narrow prose">
