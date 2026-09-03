@@ -169,11 +169,11 @@
 <style>
   .contact {
     background: linear-gradient(180deg, var(--aqua-light) 0%, var(--bg-main) 100%);
-    padding: 3.5rem 0;
+    padding: var(--sp-section) 0;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -189,7 +189,7 @@
   .intro {
     text-align: center;
     font-size: 1.1rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     color: var(--mp-secondary);
   }
 
@@ -377,7 +377,7 @@
 
   @media (max-width: 768px) {
     .contact {
-      padding: 4rem 0;
+      padding: var(--sp-section) 0;
     }
 
     .container {

@@ -139,7 +139,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     flex-wrap: wrap;
   }
 
@@ -182,7 +182,7 @@
     font-size: 1.2rem;
     line-height: 1.8;
     opacity: 0.95;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;

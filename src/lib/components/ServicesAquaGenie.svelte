@@ -78,11 +78,11 @@
 <style>
   .services-aqua {
     background: linear-gradient(180deg, var(--aqua-light), var(--aqua-tint));
-    padding: 3.5rem 0;
+    padding: var(--sp-section) 0;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -107,7 +107,7 @@
 
   .intro {
     max-width: 700px;
-    margin: 0 auto 2.5rem;
+    margin: 0 auto 1.5rem;
     text-align: center;
     font-size: 1.1rem;
     line-height: 1.8;
@@ -219,7 +219,7 @@
 
   @media (max-width: 768px) {
     .services-aqua {
-      padding: 4rem 0;
+      padding: var(--sp-section) 0;
     }
 
     .container {

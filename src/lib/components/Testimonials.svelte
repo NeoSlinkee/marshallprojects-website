@@ -50,18 +50,18 @@
 <style>
   .testimonials {
     background: var(--bg-main);
-    padding: 3.5rem 0;
+    padding: var(--sp-section) 0;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
   }
 
   .section-header {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
   }
 
   h2 {
@@ -143,7 +143,7 @@
 
   @media (max-width: 768px) {
     .testimonials {
-      padding: 4rem 0;
+      padding: var(--sp-section) 0;
     }
 
     .container {

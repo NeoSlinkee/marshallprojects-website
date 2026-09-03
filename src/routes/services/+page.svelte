@@ -92,7 +92,7 @@
   .division-head {
     text-align: center;
     max-width: 720px;
-    margin: 0 auto 2.5rem;
+    margin: 0 auto 1.5rem;
   }
   .division-head h2 {
     font-size: 2.1rem;

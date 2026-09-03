@@ -36,11 +36,11 @@
 <style>
   .about {
     background: var(--bg-main);
-    padding: 3.5rem 0;
+    padding: var(--sp-section) 0;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
   }

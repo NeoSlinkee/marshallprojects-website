@@ -44,11 +44,11 @@
 <style>
   .mid-page-visual {
     background: linear-gradient(135deg, var(--aqua-tint) 0%, var(--mp-light) 100%);
-    padding: 3.5rem 0;
+    padding: var(--sp-section) 0;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -145,7 +145,7 @@
 
   @media (max-width: 768px) {
     .mid-page-visual {
-      padding: 4rem 0;
+      padding: var(--sp-section) 0;
     }
 
     .container {

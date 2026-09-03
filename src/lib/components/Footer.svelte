@@ -51,7 +51,7 @@
   .footer {
     background: var(--mp-secondary);
     color: white;
-    padding: 4rem 0 2rem;
+    padding: 2.75rem 0 1.75rem;
     position: relative;
     overflow: hidden;
   }
@@ -65,13 +65,13 @@
   }
 
   .footer-content {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 3rem;
-    margin-bottom: 3rem;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
     position: relative;
     z-index: 1;
   }
@@ -121,7 +121,7 @@
   }
 
   .footer-bottom {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 2rem 1.5rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.15);

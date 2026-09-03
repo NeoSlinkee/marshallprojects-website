@@ -35,10 +35,25 @@
   --transition-base: 200ms ease;
   --transition-slow: 300ms ease;
   
-  /* Spacing */
+  /* Radii */
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
+
+  /* Spacing scale (single source of truth) */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 2.5rem;
+  --sp-8: 3rem;
+
+  /* Section vertical rhythm — tighter than before and consistent across
+     breakpoints (previously 3.5rem desktop but grew to 4rem on mobile). */
+  --sp-section: clamp(2rem, 3.2vw, 3rem);
+  --container-max: 1240px;
 }
 
 * {
@@ -64,14 +79,14 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   line-height: 1.2;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.6rem;
   font-weight: 700;
 }
 
 p {
-  max-width: 65ch;
-  line-height: 1.7;
-  margin-bottom: 1rem;
+  max-width: 68ch;
+  line-height: 1.65;
+  margin-bottom: 0.9rem;
 }
 
 .text-center p {

@@ -121,7 +121,7 @@
   .detail-grid {
     display: grid;
     grid-template-columns: 1fr 320px;
-    gap: 3rem;
+    gap: 2.5rem;
     align-items: start;
   }
   .hero-img {
