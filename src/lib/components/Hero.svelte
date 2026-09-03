@@ -48,6 +48,11 @@
           View Our Work
         </button>
       </div>
+      <ul class="trust-bar">
+        <li>Reliable &amp; on time</li>
+        <li>Pool &amp; home, one team</li>
+        <li>Local, Gauteng based</li>
+      </ul>
     </div>
   </div>
   <div class="hero-side-image" aria-hidden="true">
@@ -193,6 +198,39 @@
     gap: 1.25rem;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .trust-bar {
+    list-style: none;
+    margin: 1.75rem 0 0;
+    padding: 0;
+    display: flex;
+    gap: 1.25rem 1.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .trust-bar li {
+    position: relative;
+    padding-left: 1.4rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+    white-space: nowrap;
+  }
+  .trust-bar li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 1.05rem;
+    height: 1.05rem;
+    line-height: 1.05rem;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    background: var(--accent);
+    border-radius: 50%;
   }
 
   .cta-button {

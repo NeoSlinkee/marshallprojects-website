@@ -29,23 +29,25 @@ export function whatsappUrl(message = SITE.whatsappMessage) {
 // ---------------------------------------------------------------------------
 // Google Business Profile
 // ---------------------------------------------------------------------------
-// TODO(client): Fill these in from the live Google Business Profile.
-//   - embedUrl:  Google Maps > Share > Embed a map > copy the src="..." URL.
-//   - placeId:   https://developers.google.com/maps/documentation/places/web-service/place-id
-//   - reviewsUrl / writeReviewUrl: from the Business Profile "Get more reviews" link.
-//   - placesApiKey: OPTIONAL. Only needed to pull live review text/rating into the
-//                   GoogleReviews widget. A browser (HTTP referrer) restricted key.
-// Until embedUrl is set, the Maps component falls back to a keyless query embed of
-// "Gauteng"; until reviewsUrl/placeId are set, the reviews widget links out generically.
+// Wired from the live "Marshall Projects" Business Profile (a service-area
+// business, so the map shows the coverage region rather than a single pin).
+//   - The map/reviews use the CID (16681972567423341282), derived from the
+//     Profile's Feature ID. The keyless `?cid=...&output=embed` renders in an
+//     iframe with no API key.
+//   - placeId (ChIJ...) is intentionally left blank: it is ONLY needed for the
+//     live Places-API star pull (which also needs a paid, referrer-restricted
+//     key). The map + review buttons below do not need it.
 export const GOOGLE = {
-  embedUrl: '', // e.g. 'https://www.google.com/maps/embed?pb=...'
-  placeId: '', // e.g. 'ChIJ...'
-  reviewsUrl: '', // public "read reviews" link to the Business Profile
-  writeReviewUrl: '', // "write a review" deep link (…/review?placeid=…)
-  placesApiKey: '', // optional, browser-restricted, for live review pull
-  // Optional manual aggregate to display + emit in schema BEFORE live pull is
-  // wired. Only set these to real, verifiable numbers from the Business Profile
-  // (Google's rich-result policy requires genuine review data).
+  cid: '16681972567423341282',
+  embedUrl: 'https://www.google.com/maps?cid=16681972567423341282&output=embed',
+  mapUrl: 'https://www.google.com/maps?cid=16681972567423341282',
+  placeId: '', // ChIJ... — only for live Places API; not available for this service-area listing
+  reviewsUrl: 'https://www.google.com/maps?cid=16681972567423341282', // "Read our Google reviews" -> the listing
+  writeReviewUrl: 'https://g.page/r/CeJSFEqqRYLnEAE/review', // "Leave us a review" -> write dialog
+  placesApiKey: '', // optional, browser-restricted, for live review text/star pull (needs a ChIJ placeId too)
+  // Optional manual aggregate to display + emit in schema. Only set these to
+  // real, verifiable numbers once you have genuine Google reviews (Google's
+  // rich-result policy requires real review data).
   ratingValue: '', // e.g. '4.9'
   reviewCount: '' // e.g. '27'
 };

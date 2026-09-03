@@ -1,0 +1,109 @@
+==============================================================================
+ MARSHALL PROJECTS / AQUA-GENIE WEBSITE — WHAT'S NEXT
+ Last updated: 2026-09-03
+==============================================================================
+
+WHERE WE ARE NOW
+------------------------------------------------------------------------------
+The site has been rebuilt and restyled and is LIVE at marshallprojects.co.za:
+  - Multi-page structure: Home, Services (hub + 12 service pages),
+    Areas We Serve (hub + 16 suburb pages), Blog (5 posts), About,
+    Why Choose Us, AI-visibility/Quick Facts page.
+  - Header nav with a Services mega-menu; footer links; sitemap; SEO + JSON-LD
+    on every page.
+  - Restyle: Poppins (headings) + Open Sans (body) fonts, and an orange accent
+    on the primary "quote" buttons alongside the blue brand colour.
+  - Spacing tightened and made consistent; em/en dashes removed from copy.
+  - Live Google Maps embed and a Google Reviews widget are built in and running
+    on safe fallbacks until the Business Profile details are added (see below).
+
+Everything below is OPTIONAL and grouped by who does it. Nothing here is
+urgent or broken — it's the menu of what could come next.
+
+
+==============================================================================
+ 1. THINGS ONLY YOU CAN DO (no coding — highest impact first)
+==============================================================================
+
+[A] GOOGLE BUSINESS PROFILE  ← biggest single win
+    Right now the map shows a generic "Gauteng" view and the reviews widget
+    shows hand-written testimonials, because the real Business Profile details
+    aren't on file. Once you have a Google Business Profile:
+      - Get the embed URL (Google Maps > your business > Share > Embed a map),
+        the Place ID, the "read reviews" link, and the "write a review" link.
+      - Send them to me (or paste into src/lib/config/site.js, the GOOGLE
+        block). Then:
+          * the map snaps to your real location,
+          * the reviews widget can pull your real Google reviews live,
+          * "Read our Google reviews" / "Leave us a review" buttons appear,
+          * a star rating can show in Google search results.
+    If you don't have a Business Profile yet, creating one (free) is the single
+    best thing you can do for both Google and AI-assistant visibility.
+
+[B] GALLERY PHOTOS  ← as the company photos come in
+    The gallery updates itself from Cloudinary — no rebuild needed.
+      1. Log in at cloudinary.com (cloud name already wired: dz905w7fw).
+      2. Upload your batch of photos.
+      3. Tag each one: marshall-gallery
+      4. (Optional) add caption / location / alt text per photo.
+    The newest 12 show on the homepage automatically.
+    Full instructions: GALLERY-ADMIN.md
+    Tip: landscape photos around 1200x900 look best; avoid very dark or blurry
+    shots so the gallery stays sharp.
+
+[C] REVIEW THE WRITTEN CONTENT
+      - Blog posts (5) live in src/lib/content/posts.js — these are drafts I
+        wrote; read them and tweak the wording/claims to match how you work.
+      - Service descriptions and area pages: skim for anything inaccurate
+        (pricing promises, services you don't actually offer, etc.).
+
+[D] BUSINESS DETAILS TO CONFIRM
+      - Phone, both email addresses, WhatsApp number (currently +27 79 228 1033
+        and gautengprojects@ / aquageniepools@) — confirm these are right.
+      - Trading hours, and a physical/service address if you want one shown.
+
+
+==============================================================================
+ 2. DESIGN / BUILD PHASES I CAN DO NEXT (just say the word)
+==============================================================================
+
+PHASE A — Deeper visual polish (continue the restyle)
+      - Refine the homepage hero (stronger layout, better use of the accent).
+      - Card and shadow styling, section dividers, nicer iconography.
+      - Present the gallery more elegantly (consistent framing, hover, lightbox
+        polish) so photos of any quality look tidy.
+      - Design-forward treatments so the site looks great even before the
+        better company photos arrive.
+
+PHASE B — Imagery pass
+      - Replace/curate the service-card images and hero image once you have
+        better photos, with consistent cropping and treatment.
+
+PHASE C — Conversion & trust
+      - A sticky "Get a quote" bar on mobile, clearer calls to action.
+      - Trust signals: years in business, guarantees, service-area badge.
+      - Simplify/So improve the contact form and its confirmation.
+
+PHASE D — Content & SEO depth
+      - More blog posts on the topics your customers ask about.
+      - Expand FAQ content (great for Google + AI answers).
+      - Once the Business Profile is live, watch the AI-visibility audit again
+        to see if the business starts getting named by AI assistants.
+
+PHASE E — Housekeeping
+      - Accessibility check (colour contrast on the orange, focus states).
+      - Performance/image-size pass.
+      - Remove the now-unused Testimonials component (superseded by the Google
+        Reviews widget).
+
+
+==============================================================================
+ 3. HOW TO ASK FOR THE NEXT THING
+==============================================================================
+Just tell me which item(s) above you want, e.g.:
+   - "Here are my Google Business Profile links: ..."  (does item 1A)
+   - "Do Phase A"  (deeper visual polish)
+   - "The blog post about X is wrong, change it to ..."
+Small changes ship straight to a branch and I open a PR for you to review
+before it goes live, same as we've been doing.
+==============================================================================

@@ -3,6 +3,7 @@
   import PreFooter from '$lib/components/PreFooter.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import WhatsAppButton from '$lib/components/WhatsAppButton.svelte';
+  import MobileCta from '$lib/components/MobileCta.svelte';
   import '$lib/styles/variables.css';
   import '$lib/styles/pages.css';
 </script>
@@ -16,6 +17,7 @@
 <PreFooter />
 <Footer />
 <WhatsAppButton />
+<MobileCta />
 
 <style>
   :global(html) {
