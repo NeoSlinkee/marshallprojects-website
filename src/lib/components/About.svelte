@@ -1,9 +1,10 @@
 <script>
+  export let showHeading = true;
 </script>
 
 <section class="about">
   <div class="container">
-    <h2>About Us</h2>
+    {#if showHeading}<h2>About Us</h2>{/if}
     <div class="about-content">
       <p>
         <strong>Marshall Projects & Protective Coatings CC</strong> operates two specialised 
@@ -36,11 +37,11 @@
 <style>
   .about {
     background: var(--bg-main);
-    padding: 3.5rem 0;
+    padding: var(--sp-section) 0;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
   }

@@ -120,7 +120,7 @@
     <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
     <div class="lightbox-content" on:click|stopPropagation role="presentation">
       <img src={getLightboxSrc(selectedImage)} alt={selectedImage.alt} />
-      <p class="lightbox-caption">{selectedImage.caption} — {selectedImage.location}</p>
+      <p class="lightbox-caption">{selectedImage.caption}, {selectedImage.location}</p>
     </div>
   </div>
 {/if}
@@ -128,18 +128,18 @@
 <style>
   .gallery {
     background: var(--bg-main);
-    padding: 3.5rem 0;
+    padding: var(--sp-section) 0;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
   }
 
   .section-header {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
   }
 
   h2 {
@@ -159,7 +159,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.75rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .gallery-item {
@@ -354,7 +354,7 @@
 
   @media (max-width: 768px) {
     .gallery {
-      padding: 4rem 0;
+      padding: var(--sp-section) 0;
     }
 
     .container {

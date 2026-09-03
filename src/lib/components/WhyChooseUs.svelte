@@ -31,11 +31,13 @@
       icon: '🤝'
     }
   ];
+
+  export let showHeading = true;
 </script>
 
 <section class="why-choose">
   <div class="container">
-    <h2>Why Choose Us</h2>
+    {#if showHeading}<h2>Why Choose Us</h2>{/if}
     <p class="intro">
       We believe in doing the job properly the first time and building long-term relationships with our clients.
     </p>
@@ -60,11 +62,11 @@
       linear-gradient(135deg, rgba(74, 74, 74, 0.95) 0%, rgba(47, 47, 47, 0.97) 100%);
     color: white;
     position: relative;
-    padding: 3.5rem 0;
+    padding: var(--sp-section) 0;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -80,7 +82,7 @@
     text-align: center;
     font-size: 1.2rem;
     max-width: 700px;
-    margin: 0 auto 2.5rem;
+    margin: 0 auto 1.5rem;
     opacity: 0.95;
   }
 
@@ -145,7 +147,7 @@
 
   @media (max-width: 768px) {
     .why-choose {
-      padding: 4rem 0;
+      padding: var(--sp-section) 0;
     }
 
     .container {

@@ -12,7 +12,7 @@
 <style>
   .pre-footer {
     background: linear-gradient(180deg, var(--mp-primary) 0%, var(--mp-secondary) 100%);
-    padding: 3rem 0;
+    padding: 2.25rem 0;
   }
 
   .pre-footer-content {

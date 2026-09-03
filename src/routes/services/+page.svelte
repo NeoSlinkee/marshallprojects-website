@@ -26,7 +26,7 @@
     </nav>
     <h1>Our Services</h1>
     <p class="lead">
-      Two specialised divisions covering everything your home and pool need — all from one
+      Two specialised divisions covering everything your home and pool need, all from one
       trusted, local team.
     </p>
   </div>
@@ -35,7 +35,7 @@
 <section class="section tint" id="pool">
   <div class="container">
     <div class="division-head aqua">
-      <h2>Aqua-Genie — Pool Services</h2>
+      <h2>Aqua-Genie, Pool Services</h2>
       <p>Complete swimming pool care to keep your pool clean, safe, and swim-ready all year.</p>
     </div>
     <div class="card-grid">
@@ -58,7 +58,7 @@
 <section class="section mp-tint" id="home">
   <div class="container">
     <div class="division-head mp">
-      <h2>Marshall Projects — Home Maintenance</h2>
+      <h2>Marshall Projects, Home Maintenance</h2>
       <p>Reliable property maintenance for homeowners, landlords, and tenants across Gauteng.</p>
     </div>
     <div class="card-grid">
@@ -82,7 +82,7 @@
   <div class="container">
     <div class="cta-band">
       <h2>Not sure which service you need?</h2>
-      <p>Describe the problem and we'll point you in the right direction — no obligation.</p>
+      <p>Describe the problem and we'll point you in the right direction, no obligation.</p>
       <a href="/#contact" class="btn btn-white">Ask Us</a>
     </div>
   </div>
@@ -92,7 +92,7 @@
   .division-head {
     text-align: center;
     max-width: 720px;
-    margin: 0 auto 2.5rem;
+    margin: 0 auto 1.5rem;
   }
   .division-head h2 {
     font-size: 2.1rem;

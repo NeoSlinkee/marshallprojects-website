@@ -31,14 +31,14 @@
   </div>
 </section>
 
-<WhyChooseUs />
+<WhyChooseUs showHeading={false} />
 
 <section class="section">
   <div class="container-narrow prose">
     <h2>Doing the job properly, the first time</h2>
     <p>
       A lot of maintenance problems come back because they were patched instead of fixed. We
-      would rather do it once and do it right — whether that is preparing a surface before we
+      would rather do it once and do it right, whether that is preparing a surface before we
       paint it, finding the actual source of a leak, or sizing a pool pump correctly instead of
       fitting whatever is on the shelf.
     </p>
@@ -46,12 +46,12 @@
     <p>
       Managing a property is easier when you are not juggling five different numbers. Because we
       cover both <a href="/services">pool and home maintenance</a>, you have a single, trusted
-      team to call for the pool service, the roof repair, and the painting — all in one place.
+      team to call for the pool service, the roof repair, and the painting, all in one place.
     </p>
     <h2>Local, and here for the long term</h2>
     <p>
       We are based in Gauteng and we understand the local climate, building standards, and the
-      way Highveld weather treats roofs, walls, and pools. We are not chasing one-off jobs — we
+      way Highveld weather treats roofs, walls, and pools. We are not chasing one-off jobs, we
       build long-term relationships with the homeowners and landlords we look after across
       <a href="/areas">the suburbs we serve</a>.
     </p>

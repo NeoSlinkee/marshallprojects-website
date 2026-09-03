@@ -37,7 +37,7 @@
 
         <p class="areas-note">
           <a href="/areas">View all areas we serve →</a><br />
-          Don't see your area? <a href="#contact">Contact us</a> — we may still be able to assist.
+          Don't see your area? <a href="#contact">Contact us</a>, we may still be able to assist.
         </p>
       </div>
 
@@ -51,18 +51,18 @@
 <style>
   .areas-we-serve {
     background: linear-gradient(180deg, var(--bg-main) 0%, var(--aqua-light) 100%);
-    padding: 3.5rem 0;
+    padding: var(--sp-section) 0;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
   }
 
   .section-header {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
   }
 
   h2 {
@@ -174,7 +174,7 @@
 
   @media (max-width: 768px) {
     .areas-we-serve {
-      padding: 4rem 0;
+      padding: var(--sp-section) 0;
     }
 
     .container {

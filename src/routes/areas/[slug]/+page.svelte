@@ -9,7 +9,7 @@
   $: nearby = area.nearby.map((n) => areas.find((a) => a.name === n)).filter(Boolean);
 
   $: title = `Pool & Home Maintenance in ${area.name} | Aqua-Genie & Marshall Projects`;
-  $: description = `Reliable swimming pool servicing, repairs and home maintenance in ${area.name}, Gauteng. Aqua-Genie pool care and Marshall Projects handyman, painting, waterproofing and roofing — local, trusted, on time.`;
+  $: description = `Reliable swimming pool servicing, repairs and home maintenance in ${area.name}, Gauteng. Aqua-Genie pool care and Marshall Projects handyman, painting, waterproofing and roofing, local, trusted, on time.`;
   $: path = `/areas/${area.slug}`;
 
   $: faqs = [
@@ -63,7 +63,7 @@
       <p class="intro-lead">
         Aqua-Genie and Marshall Projects look after homes right across {area.name}. Whether your
         pool needs a regular service, your roof has sprung a leak, or the house is due for a
-        repaint, you have one reliable, local team to call — no chasing multiple tradespeople.
+        repaint, you have one reliable, local team to call, no chasing multiple tradespeople.
       </p>
       <p>
         We know the {area.name} area and the way the Highveld climate treats pools, roofs, and
@@ -74,14 +74,14 @@
       <h2>Pool services in {area.name}</h2>
       <ul class="svc-list">
         {#each poolServices as s}
-          <li><a href="/services/{s.slug}">{s.title}</a> — {s.tagline}</li>
+          <li><a href="/services/{s.slug}">{s.title}</a>, {s.tagline}</li>
         {/each}
       </ul>
 
       <h2>Home maintenance in {area.name}</h2>
       <ul class="svc-list">
         {#each homeServices as s}
-          <li><a href="/services/{s.slug}">{s.title}</a> — {s.tagline}</li>
+          <li><a href="/services/{s.slug}">{s.title}</a>, {s.tagline}</li>
         {/each}
       </ul>
 
@@ -132,7 +132,7 @@
   .detail-grid {
     display: grid;
     grid-template-columns: 1fr 320px;
-    gap: 3rem;
+    gap: 2.5rem;
     align-items: start;
   }
   .intro-lead {

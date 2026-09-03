@@ -3,9 +3,9 @@
   import { posts } from '$lib/content/posts.js';
   import { breadcrumbs, webPage, localBusiness } from '$lib/config/schema.js';
 
-  const title = 'Blog | Pool & Home Maintenance Tips — Marshall Projects & Aqua-Genie';
+  const title = 'Blog | Pool & Home Maintenance Tips, Marshall Projects & Aqua-Genie';
   const description =
-    'Practical pool care and home maintenance advice for Gauteng homeowners — servicing schedules, green-pool recovery, waterproofing, pool heating, and more.';
+    'Practical pool care and home maintenance advice for Gauteng homeowners, servicing schedules, green-pool recovery, waterproofing, pool heating, and more.';
 
   const fmt = (d) => new Date(d).toLocaleDateString('en-ZA', { year: 'numeric', month: 'long', day: 'numeric' });
 

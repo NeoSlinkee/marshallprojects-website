@@ -27,7 +27,7 @@
         <p>
           Why juggle multiple service providers when one trusted team can handle everything? 
           Aqua-Genie and Marshall Projects work together to provide comprehensive home maintenance 
-          solutions — from sparkling pools to reliable handyman services.
+          solutions, from sparkling pools to reliable handyman services.
         </p>
         <p>
           Save time, reduce hassle, and enjoy peace of mind knowing your entire property is 
@@ -44,11 +44,11 @@
 <style>
   .mid-page-visual {
     background: linear-gradient(135deg, var(--aqua-tint) 0%, var(--mp-light) 100%);
-    padding: 3.5rem 0;
+    padding: var(--sp-section) 0;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 0 1.5rem;
   }
@@ -118,25 +118,25 @@
   }
 
   .cta-button {
-    background: var(--aqua-primary);
-    color: white;
-    border: 2px solid var(--aqua-primary);
+    background: var(--accent);
+    color: var(--accent-fg);
+    border: 2px solid var(--accent);
     padding: 1rem 2.5rem;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: var(--radius-md);
     cursor: pointer;
     transition: all var(--transition-base);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 8px 20px rgba(234, 88, 12, 0.28);
     font-family: inherit;
     align-self: flex-start;
   }
 
   .cta-button:hover {
-    background: var(--aqua-secondary);
-    border-color: var(--aqua-secondary);
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 12px 26px rgba(234, 88, 12, 0.34);
   }
 
   .cta-button:active {
@@ -145,7 +145,7 @@
 
   @media (max-width: 768px) {
     .mid-page-visual {
-      padding: 4rem 0;
+      padding: var(--sp-section) 0;
     }
 
     .container {

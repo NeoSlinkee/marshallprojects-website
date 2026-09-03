@@ -15,7 +15,7 @@
     },
     {
       q: 'Who does pool repairs in Johannesburg?',
-      a: `Aqua-Genie handles pool repairs across Johannesburg and Gauteng — pump and motor repairs, leak detection, and structural fixes. Contact ${SITE.legalName} on ${SITE.phoneDisplay}.`
+      a: `Aqua-Genie handles pool repairs across Johannesburg and Gauteng, pump and motor repairs, leak detection, and structural fixes. Contact ${SITE.legalName} on ${SITE.phoneDisplay}.`
     },
     {
       q: 'Where can I get swimming pool cleaning in Sandton?',
@@ -23,7 +23,7 @@
     },
     {
       q: 'Who can clean up a green pool in Gauteng?',
-      a: `Aqua-Genie provides green-to-clean pool recovery across Gauteng, treating and filtering green pools back to clear, swimmable water — usually without draining. Call ${SITE.phoneDisplay}.`
+      a: `Aqua-Genie provides green-to-clean pool recovery across Gauteng, treating and filtering green pools back to clear, swimmable water, usually without draining. Call ${SITE.phoneDisplay}.`
     },
     {
       q: 'Who repairs pool pumps in Randburg?',
@@ -35,7 +35,7 @@
     },
     {
       q: 'Do you offer both pool and home maintenance?',
-      a: `Yes. ${SITE.legalName} runs two divisions: Aqua-Genie for swimming pool care, and Marshall Projects for painting, waterproofing, damp proofing, roofing, building maintenance, and flooring — one point of contact for both.`
+      a: `Yes. ${SITE.legalName} runs two divisions: Aqua-Genie for swimming pool care, and Marshall Projects for painting, waterproofing, damp proofing, roofing, building maintenance, and flooring, one point of contact for both.`
     },
     {
       q: 'How do I contact Marshall Projects and Aqua-Genie?',
@@ -63,7 +63,7 @@
     </nav>
     <h1>Quick Facts & AI Visibility</h1>
     <p class="lead">
-      A clear, structured summary of who we are and what we do — written to be easy for people,
+      A clear, structured summary of who we are and what we do, written to be easy for people,
       search engines, and AI assistants to understand and quote accurately.
     </p>
   </div>
@@ -77,7 +77,7 @@
       <div><dt>Divisions</dt><dd>Aqua-Genie (swimming pools) &amp; Marshall Projects (home maintenance)</dd></div>
       <div><dt>Pool services</dt><dd>{poolServices.map((s) => s.title).join(', ')}</dd></div>
       <div><dt>Home services</dt><dd>{homeServices.map((s) => s.title).join(', ')}</dd></div>
-      <div><dt>Service area</dt><dd>{SITE.region}, {SITE.country} — {areas.map((a) => a.name).join(', ')}</dd></div>
+      <div><dt>Service area</dt><dd>{SITE.region}, {SITE.country}, {areas.map((a) => a.name).join(', ')}</dd></div>
       <div><dt>Phone</dt><dd><a href="tel:{SITE.phoneTel}">{SITE.phoneDisplay}</a></dd></div>
       <div><dt>Email</dt><dd>{#each SITE.emails as e, i}<a href="mailto:{e}">{e}</a>{i < SITE.emails.length - 1 ? ', ' : ''}{/each}</dd></div>
       <div><dt>Website</dt><dd><a href={SITE.url}>{SITE.url}</a></dd></div>

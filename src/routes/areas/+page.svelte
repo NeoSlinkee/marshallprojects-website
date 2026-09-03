@@ -6,7 +6,7 @@
 
   const title = 'Areas We Serve | Pool & Home Maintenance Across Gauteng';
   const description =
-    'Marshall Projects and Aqua-Genie serve residential homeowners across Gauteng — Randburg, Northcliff, Sandton, Bryanston, Fourways, Midrand, Roodepoort and surrounding suburbs.';
+    'Marshall Projects and Aqua-Genie serve residential homeowners across Gauteng, Randburg, Northcliff, Sandton, Bryanston, Fourways, Midrand, Roodepoort and surrounding suburbs.';
 
   const jsonld = [
     localBusiness(),
@@ -46,7 +46,7 @@
         {/each}
       </div>
       <p class="note">
-        Don't see your suburb? <a href="/#contact">Contact us</a> — we may still be able to help.
+        Don't see your suburb? <a href="/#contact">Contact us</a>, we may still be able to help.
       </p>
     </div>
     <div class="map-wrap">
