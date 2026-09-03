@@ -10,12 +10,24 @@
     </div>
 
     <div class="footer-section">
-      <h4>Our Services</h4>
+      <h4>Services</h4>
       <ul>
-        <li>Aqua-Genie Pool Services</li>
-        <li>Handyman & Property Maintenance</li>
-        <li>Painting & Protective Coatings</li>
-        <li>Waterproofing & Damp Proofing</li>
+        <li><a href="/services">All Services</a></li>
+        <li><a href="/services/pool-maintenance">Pool Maintenance</a></li>
+        <li><a href="/services/pool-repairs">Pool Repairs</a></li>
+        <li><a href="/services/painting">Painting</a></li>
+        <li><a href="/services/waterproofing">Waterproofing</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/why-choose-us">Why Choose Us</a></li>
+        <li><a href="/areas">Areas We Serve</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/ai-visibility">Quick Facts</a></li>
       </ul>
     </div>
 
@@ -25,12 +37,8 @@
         <li><a href="tel:+27792281033">+27 (0)79 228 1033</a></li>
         <li><a href="mailto:gautengprojects@gmail.com">gautengprojects@gmail.com</a></li>
         <li><a href="mailto:aquageniepools@gmail.com">aquageniepools@gmail.com</a></li>
+        <li><a href="/#contact">Request a Quote</a></li>
       </ul>
-    </div>
-
-    <div class="footer-section">
-      <h4>Service Area</h4>
-      <p>Serving residential clients across<br />Gauteng, South Africa</p>
     </div>
   </div>
 
