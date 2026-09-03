@@ -1,25 +1,10 @@
 <script>
-  const areasColumn1 = [
-    'Randburg',
-    'Ferndale',
-    'Blairgowrie',
-    'Bordeaux',
-    'Northcliff',
-    'Cresta',
-    'Linden',
-    'Robindale'
-  ];
+  import MapEmbed from '$lib/components/MapEmbed.svelte';
+  import { areas } from '$lib/config/site.js';
 
-  const areasColumn2 = [
-    'Robin Hills',
-    'Emmarentia',
-    'Sandton',
-    'Bryanston',
-    'Rosebank',
-    'Fourways',
-    'Midrand',
-    'Roodepoort'
-  ];
+  const half = Math.ceil(areas.length / 2);
+  const areasColumn1 = areas.slice(0, half);
+  const areasColumn2 = areas.slice(half);
 </script>
 
 <section class="areas-we-serve" id="areas">
@@ -34,41 +19,30 @@
         <div class="areas-columns">
           <div class="areas-column">
             {#each areasColumn1 as area}
-              <div class="area-item">
+              <a class="area-item" href="/areas/{area.slug}">
                 <span class="pin-icon">📍</span>
-                <span class="area-name">{area}</span>
-              </div>
+                <span class="area-name">{area.name}</span>
+              </a>
             {/each}
           </div>
           <div class="areas-column">
             {#each areasColumn2 as area}
-              <div class="area-item">
+              <a class="area-item" href="/areas/{area.slug}">
                 <span class="pin-icon">📍</span>
-                <span class="area-name">{area}</span>
-              </div>
+                <span class="area-name">{area.name}</span>
+              </a>
             {/each}
           </div>
         </div>
-        
+
         <p class="areas-note">
+          <a href="/areas">View all areas we serve →</a><br />
           Don't see your area? <a href="#contact">Contact us</a> — we may still be able to assist.
         </p>
       </div>
 
       <div class="map-container">
-        <img 
-          src="/images/maps/gauteng-service-area.jpg"
-          alt="Map showing service areas across Gauteng including Randburg, Sandton, Fourways and surrounding suburbs"
-          width="600"
-          height="400"
-          loading="lazy"
-          decoding="async"
-          class="map-image"
-        />
-        <div class="map-fallback">
-          <span class="map-icon">🗺️</span>
-          <span class="map-text">Gauteng Service Areas</span>
-        </div>
+        <MapEmbed height="400" />
       </div>
     </div>
   </div>
@@ -133,7 +107,21 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.5rem 0;
+    padding: 0.4rem 0.5rem;
+    margin: 0 -0.5rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: inherit;
+    transition: all var(--transition-fast);
+  }
+
+  .area-item:hover {
+    background: white;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .area-item:hover .area-name {
+    color: var(--aqua-secondary);
   }
 
   .pin-icon {
@@ -168,43 +156,7 @@
   }
 
   .map-container {
-    position: relative;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-lg);
-    border: 3px solid white;
-    aspect-ratio: 4 / 3;
-    background: var(--aqua-tint);
-  }
-
-  .map-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .map-fallback {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    background: linear-gradient(135deg, var(--aqua-tint), var(--aqua-light));
-    z-index: -1;
-  }
-
-  .map-icon {
-    font-size: 4rem;
-    opacity: 0.4;
-  }
-
-  .map-text {
-    color: var(--aqua-secondary);
-    font-weight: 600;
-    font-size: 1.1rem;
   }
 
   @media (max-width: 900px) {

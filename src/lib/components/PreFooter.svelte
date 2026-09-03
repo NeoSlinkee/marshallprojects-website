@@ -1,13 +1,10 @@
 <script>
-  function scrollToContact() {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  }
 </script>
 
 <section class="pre-footer">
   <div class="pre-footer-content">
     <p class="cta-text">
-      Need help with your pool or home maintenance? <button class="cta-link" on:click={scrollToContact}>Let's talk.</button>
+      Need help with your pool or home maintenance? <a class="cta-link" href="/#contact">Let's talk.</a>
     </p>
   </div>
 </section>
