@@ -71,7 +71,7 @@
       {/each}
     </div>
 
-    <p class="tagline">Everything for your pool — to keep you swimming.</p>
+    <p class="tagline">Everything for your pool, to keep you swimming.</p>
   </div>
 </section>
 

@@ -6,16 +6,16 @@ export const posts = [
     slug: 'how-often-service-pool-gauteng',
     title: 'How Often Should You Service Your Pool in Gauteng?',
     description:
-      'Gauteng pools need different care through the seasons. Here is a simple guide to how often to service your pool — and why skipping it costs more in the long run.',
+      'Gauteng pools need different care through the seasons. Here is a simple guide to how often to service your pool, and why skipping it costs more in the long run.',
     date: '2026-08-18',
     category: 'Pool Care',
     image: '/images/gallery/pool-1.jpg',
     readingTime: '4 min',
     body: `
-      <p>One of the questions we hear most often from homeowners is simply: how often does my pool actually need to be serviced? The honest answer is that it depends on the season, how much the pool is used, and what is around it — but there are some sensible rules of thumb for Gauteng conditions.</p>
+      <p>One of the questions we hear most often from homeowners is simply: how often does my pool actually need to be serviced? The honest answer is that it depends on the season, how much the pool is used, and what is around it, but there are some sensible rules of thumb for Gauteng conditions.</p>
 
       <h2>Summer: weekly is ideal</h2>
-      <p>Through the hot Highveld summer, pools work hard. Higher temperatures, more swimmers, afternoon thunderstorms, and pollen or garden debris all throw the water chemistry out of balance quickly. A weekly service — testing and balancing the water, cleaning the pool, emptying baskets, and backwashing the filter — keeps everything stable and the water safe to swim in.</p>
+      <p>Through the hot Highveld summer, pools work hard. Higher temperatures, more swimmers, afternoon thunderstorms, and pollen or garden debris all throw the water chemistry out of balance quickly. A weekly service, testing and balancing the water, cleaning the pool, emptying baskets, and backwashing the filter, keeps everything stable and the water safe to swim in.</p>
 
       <h2>Winter: every two to four weeks</h2>
       <p>In the cooler months the pool is used less and algae grows more slowly, so you can usually stretch to a fortnightly or monthly service. It is tempting to stop altogether, but a pool left completely unattended over winter is exactly the pool that turns green and needs an expensive recovery in spring.</p>
@@ -30,7 +30,7 @@ export const posts = [
       </ul>
 
       <h2>Why regular servicing saves money</h2>
-      <p>Small problems are cheap to fix; neglected ones are not. A worn seal, a struggling pump, or slightly-off water chemistry all become bigger, costlier jobs when left. Regular servicing is really about catching those early — which is why a maintenance plan almost always works out cheaper than the occasional emergency call-out.</p>
+      <p>Small problems are cheap to fix; neglected ones are not. A worn seal, a struggling pump, or slightly-off water chemistry all become bigger, costlier jobs when left. Regular servicing is really about catching those early, which is why a maintenance plan almost always works out cheaper than the occasional emergency call-out.</p>
 
       <p>If you would like a regular pool service you can set and forget, <a href="/services/pool-maintenance">see our pool maintenance service</a> or <a href="/#contact">get in touch for a quote</a>.</p>
     `
@@ -48,7 +48,7 @@ export const posts = [
       <p>Come back from a holiday, or skip a few weeks of maintenance in summer, and you can find your pool has turned an alarming shade of green. The good news: in most cases a green pool can be brought back to clear, swimmable water without draining it.</p>
 
       <h2>Why pools turn green</h2>
-      <p>Green water is algae. Algae blooms when there is not enough chlorine to keep it in check — usually after a stretch of hot weather, heavy rain, or a break in regular servicing. The warmer it is, the faster it takes hold, which is why Gauteng pools can go from clear to green in just a few days over summer.</p>
+      <p>Green water is algae. Algae blooms when there is not enough chlorine to keep it in check, usually after a stretch of hot weather, heavy rain, or a break in regular servicing. The warmer it is, the faster it takes hold, which is why Gauteng pools can go from clear to green in just a few days over summer.</p>
 
       <h2>How a green-to-clean recovery works</h2>
       <p>Recovering a green pool is a process, not a single dose of chemicals:</p>
@@ -60,12 +60,12 @@ export const posts = [
       </ol>
 
       <h2>When draining is the right call</h2>
-      <p>Occasionally the water is too far gone — extreme staining, very high stabiliser levels, or a damaged surface — and a drain-and-clean is genuinely the better option. We only recommend it when treating the existing water would cost more effort than it is worth, and we will always tell you honestly which route makes sense.</p>
+      <p>Occasionally the water is too far gone, extreme staining, very high stabiliser levels, or a damaged surface, and a drain-and-clean is genuinely the better option. We only recommend it when treating the existing water would cost more effort than it is worth, and we will always tell you honestly which route makes sense.</p>
 
       <h2>Keeping it clear</h2>
       <p>The best cure for a green pool is not letting it get there. Regular servicing keeps the chlorine where it needs to be and catches problems early.</p>
 
-      <p>Dealing with a green pool right now? <a href="/services/pool-refurbishments">Our green-to-clean recovery</a> can help — <a href="/#contact">send us a message</a> and we'll get it sorted.</p>
+      <p>Dealing with a green pool right now? <a href="/services/pool-refurbishments">Our green-to-clean recovery</a> can help, <a href="/#contact">send us a message</a> and we'll get it sorted.</p>
     `
   },
   {
@@ -78,13 +78,13 @@ export const posts = [
     image: '/images/gallery/Roof Ads IMG_0729.jpg',
     readingTime: '4 min',
     body: `
-      <p>Highveld summer storms are dramatic — and they find every weak point in a building. The time to deal with waterproofing is <em>before</em> the first big downpour, while surfaces are dry and a small repair is still a small repair.</p>
+      <p>Highveld summer storms are dramatic, and they find every weak point in a building. The time to deal with waterproofing is <em>before</em> the first big downpour, while surfaces are dry and a small repair is still a small repair.</p>
 
       <h2>Start with the roof</h2>
       <ul>
         <li>Look for cracked, slipped, or missing tiles and lifted sheeting.</li>
         <li>Check the ridges and flashing where the roof meets walls and chimneys.</li>
-        <li>Inspect any flat-roof or concrete sections — these are the most common leak points.</li>
+        <li>Inspect any flat-roof or concrete sections, these are the most common leak points.</li>
       </ul>
 
       <h2>Clear the gutters and downpipes</h2>
@@ -94,7 +94,7 @@ export const posts = [
       <p>Balconies and parapet walls take a beating from sun and rain and are frequent sources of leaks into the rooms below. Hairline cracks in exterior walls also let water in, where it shows up later as damp on the inside.</p>
 
       <h2>Deal with existing damp early</h2>
-      <p>If you already have damp patches, peeling paint, or musty smells, the rains will make them worse. Treating the source now — rather than repainting over it — saves you a bigger repair later.</p>
+      <p>If you already have damp patches, peeling paint, or musty smells, the rains will make them worse. Treating the source now, rather than repainting over it, saves you a bigger repair later.</p>
 
       <h2>What to waterproof, and when</h2>
       <p>A proper waterproofing system depends on the surface: membranes and coatings for roofs and balconies, sealing for walls and gutters. The key is preparing the surface correctly and applying the right product while everything is dry.</p>
@@ -106,19 +106,19 @@ export const posts = [
     slug: 'solar-pool-heating-vs-heat-pumps',
     title: 'Solar Pool Heating vs Heat Pumps: Which Is Right for Your Home?',
     description:
-      'Want to swim for more of the year? Here is an honest comparison of solar pool heating and heat pumps for Gauteng homes — cost, comfort, and running expense.',
+      'Want to swim for more of the year? Here is an honest comparison of solar pool heating and heat pumps for Gauteng homes, cost, comfort, and running expense.',
     date: '2026-06-24',
     category: 'Pool Care',
     image: '/images/gallery/pool-heating.jpg',
     readingTime: '4 min',
     body: `
-      <p>A heated pool turns three months of swimming into most of the year. The two main options for Gauteng homes are solar heating and heat pumps — and the right choice depends on your roof, your budget, and how you like to use the pool.</p>
+      <p>A heated pool turns three months of swimming into most of the year. The two main options for Gauteng homes are solar heating and heat pumps, and the right choice depends on your roof, your budget, and how you like to use the pool.</p>
 
       <h2>Solar pool heating</h2>
-      <p>Solar heating uses panels — usually on the roof — to warm water as the pump circulates it. It is the cheapest option to run because the sun does the work.</p>
+      <p>Solar heating uses panels, usually on the roof, to warm water as the pump circulates it. It is the cheapest option to run because the sun does the work.</p>
       <ul>
         <li><strong>Best for:</strong> homes with good roof space and sun exposure.</li>
-        <li><strong>Running cost:</strong> very low — essentially just the pump.</li>
+        <li><strong>Running cost:</strong> very low, essentially just the pump.</li>
         <li><strong>Trade-off:</strong> heat depends on the weather, so a run of cold, cloudy days limits it.</li>
       </ul>
 
@@ -126,14 +126,14 @@ export const posts = [
       <p>A heat pump works like a reverse air conditioner, extracting warmth from the air to heat the water on demand.</p>
       <ul>
         <li><strong>Best for:</strong> consistent, controllable heat regardless of the weather.</li>
-        <li><strong>Running cost:</strong> uses electricity, but efficiently — far more heat out than power in.</li>
+        <li><strong>Running cost:</strong> uses electricity, but efficiently, far more heat out than power in.</li>
         <li><strong>Trade-off:</strong> higher upfront cost than solar.</li>
       </ul>
 
       <h2>Which should you choose?</h2>
       <p>If you have the roof space and mainly want to extend the season affordably, solar is hard to beat. If you want the pool at a reliable temperature whenever you fancy a swim, a heat pump gives you that control. Some homes use both. A pool cover, in either case, dramatically cuts heat loss overnight and is the best-value add-on you can make.</p>
 
-      <p>Not sure which suits your pool? <a href="/services/pool-heating">See our pool heating service</a> and we'll help you size the right system — <a href="/#contact">get in touch</a>.</p>
+      <p>Not sure which suits your pool? <a href="/services/pool-heating">See our pool heating service</a> and we'll help you size the right system, <a href="/#contact">get in touch</a>.</p>
     `
   },
   {
@@ -146,13 +146,13 @@ export const posts = [
     image: '/images/gallery/pool-4.jpg',
     readingTime: '3 min',
     body: `
-      <p>Your pool pump quietly does the most important job in the whole system — circulating and filtering the water. When it starts to struggle, the water is usually the first thing to suffer. Here are five signs it needs attention.</p>
+      <p>Your pool pump quietly does the most important job in the whole system, circulating and filtering the water. When it starts to struggle, the water is usually the first thing to suffer. Here are five signs it needs attention.</p>
 
       <h2>1. Unusual noise</h2>
       <p>A pump that suddenly becomes loud, grinding, or rattling often has worn bearings or a problem with the motor. Caught early, it is a repair; ignored, it is a replacement.</p>
 
       <h2>2. Cloudy water that won't clear</h2>
-      <p>If your chemistry is balanced but the water stays cloudy, the pump may not be moving or filtering enough water — a sign of a blockage, a worn impeller, or a pump that is undersized for the pool.</p>
+      <p>If your chemistry is balanced but the water stays cloudy, the pump may not be moving or filtering enough water, a sign of a blockage, a worn impeller, or a pump that is undersized for the pool.</p>
 
       <h2>3. Loss of pressure or weak flow</h2>
       <p>Weak returns and low filter pressure can point to a leak on the suction side, a clogged basket, or a pump losing its prime. It is worth investigating before the filtration suffers.</p>
@@ -161,7 +161,7 @@ export const posts = [
       <p>Water pooling under or around the pump usually means a failing seal or fitting. Small leaks let air into the system and can burn out a motor if left.</p>
 
       <h2>5. It keeps switching off</h2>
-      <p>A pump that trips or shuts down by itself is often overheating — sometimes due to age, sometimes electrical. This one is worth acting on quickly.</p>
+      <p>A pump that trips or shuts down by itself is often overheating, sometimes due to age, sometimes electrical. This one is worth acting on quickly.</p>
 
       <h2>Repair or replace?</h2>
       <p>Not every ageing pump needs replacing, but an old, inefficient one can quietly cost a fortune in electricity. We'll give you an honest comparison so you can make the sensible long-term call.</p>

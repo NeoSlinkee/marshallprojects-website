@@ -50,7 +50,7 @@
   --sp-7: 2.5rem;
   --sp-8: 3rem;
 
-  /* Section vertical rhythm — tighter than before and consistent across
+  /* Section vertical rhythm, tighter than before and consistent across
      breakpoints (previously 3.5rem desktop but grew to 4rem on mobile). */
   --sp-section: clamp(2rem, 3.2vw, 3rem);
   --container-max: 1240px;

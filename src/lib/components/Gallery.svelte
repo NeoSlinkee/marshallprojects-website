@@ -120,7 +120,7 @@
     <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
     <div class="lightbox-content" on:click|stopPropagation role="presentation">
       <img src={getLightboxSrc(selectedImage)} alt={selectedImage.alt} />
-      <p class="lightbox-caption">{selectedImage.caption} — {selectedImage.location}</p>
+      <p class="lightbox-caption">{selectedImage.caption}, {selectedImage.location}</p>
     </div>
   </div>
 {/if}

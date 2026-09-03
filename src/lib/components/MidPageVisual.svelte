@@ -27,7 +27,7 @@
         <p>
           Why juggle multiple service providers when one trusted team can handle everything? 
           Aqua-Genie and Marshall Projects work together to provide comprehensive home maintenance 
-          solutions — from sparkling pools to reliable handyman services.
+          solutions, from sparkling pools to reliable handyman services.
         </p>
         <p>
           Save time, reduce hassle, and enjoy peace of mind knowing your entire property is 

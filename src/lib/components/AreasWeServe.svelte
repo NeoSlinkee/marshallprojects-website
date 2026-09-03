@@ -37,7 +37,7 @@
 
         <p class="areas-note">
           <a href="/areas">View all areas we serve →</a><br />
-          Don't see your area? <a href="#contact">Contact us</a> — we may still be able to assist.
+          Don't see your area? <a href="#contact">Contact us</a>, we may still be able to assist.
         </p>
       </div>
 

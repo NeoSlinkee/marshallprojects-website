@@ -10,7 +10,7 @@ export const SITE = {
   shortName: 'Marshall Projects',
   url: 'https://marshallprojects.co.za',
   description:
-    'Professional swimming pool maintenance and handyman services across Gauteng, South Africa. Aqua-Genie pool care and Marshall Projects property maintenance — reliable, honest, local.',
+    'Professional swimming pool maintenance and handyman services across Gauteng, South Africa. Aqua-Genie pool care and Marshall Projects property maintenance, reliable, honest, local.',
   phoneDisplay: '+27 (0)79 228 1033',
   phoneTel: '+27792281033',
   whatsapp: '27792281033',
@@ -51,7 +51,7 @@ export const GOOGLE = {
 };
 
 // Curated client reviews shown until live Google reviews are wired up.
-// These mirror the on-site testimonials — they are NOT presented as Google reviews.
+// These mirror the on-site testimonials, they are NOT presented as Google reviews.
 export const curatedReviews = [
   {
     name: 'Lerato M.',
@@ -74,7 +74,7 @@ export const curatedReviews = [
 ];
 
 // ---------------------------------------------------------------------------
-// Services — Aqua-Genie (pool) division
+// Services, Aqua-Genie (pool) division
 // ---------------------------------------------------------------------------
 export const poolServices = [
   {
@@ -87,7 +87,7 @@ export const poolServices = [
     image: '/images/gallery/pool-1.jpg',
     icon: '🏊',
     keywords: ['pool maintenance Randburg', 'pool cleaning Gauteng', 'weekly pool service'],
-    intro: `A well-maintained pool stays clear, healthy, and cheaper to run. Aqua-Genie provides scheduled weekly and monthly pool servicing for homeowners across Gauteng — testing and balancing the water, cleaning the pool and equipment, and catching small problems before they become expensive repairs.`,
+    intro: `A well-maintained pool stays clear, healthy, and cheaper to run. Aqua-Genie provides scheduled weekly and monthly pool servicing for homeowners across Gauteng, testing and balancing the water, cleaning the pool and equipment, and catching small problems before they become expensive repairs.`,
     features: [
       'Water testing and chemical balancing (chlorine, pH, alkalinity)',
       'Skimming, brushing, and vacuuming of the pool',
@@ -121,7 +121,7 @@ export const poolServices = [
     image: '/images/gallery/pool-2.jpg',
     icon: '🔧',
     keywords: ['pool repair Johannesburg', 'pool leak detection', 'pool equipment repair'],
-    intro: `When something stops working, a pool can go from an asset to a headache overnight. Aqua-Genie diagnoses and repairs pool equipment, plumbing, and structural issues — from noisy pumps and failing seals to persistent leaks and cracked surfaces.`,
+    intro: `When something stops working, a pool can go from an asset to a headache overnight. Aqua-Genie diagnoses and repairs pool equipment, plumbing, and structural issues, from noisy pumps and failing seals to persistent leaks and cracked surfaces.`,
     features: [
       'Pump, motor, and multiport valve repairs',
       'Leak detection and pipe repairs',
@@ -137,7 +137,7 @@ export const poolServices = [
     faqs: [
       {
         q: 'How do you find a pool leak?',
-        a: 'We check the obvious points first — fittings, plumbing, and the equipment — then use pressure testing and water-loss checks to isolate hidden leaks before repairing them.'
+        a: 'We check the obvious points first, fittings, plumbing, and the equipment, then use pressure testing and water-loss checks to isolate hidden leaks before repairing them.'
       },
       {
         q: 'Is it worth repairing an old pump?',
@@ -151,11 +151,11 @@ export const poolServices = [
     title: 'Pool Refurbishments',
     tagline: 'Resurfacing, tiling & green-to-clean',
     summary:
-      'Complete pool renovations — resurfacing, tiling, coping, and green-to-clean transformations that bring tired pools back to life.',
+      'Complete pool renovations, resurfacing, tiling, coping, and green-to-clean transformations that bring tired pools back to life.',
     image: '/images/gallery/pool-3.jpg',
     icon: '✨',
     keywords: ['pool refurbishment Gauteng', 'pool resurfacing', 'green pool cleanup Gauteng'],
-    intro: `Older pools lose their finish, their tiles, and sometimes their colour entirely. Aqua-Genie handles full pool refurbishments — from resurfacing and re-tiling to rescuing a green pool and returning it to sparkling, usable water.`,
+    intro: `Older pools lose their finish, their tiles, and sometimes their colour entirely. Aqua-Genie handles full pool refurbishments, from resurfacing and re-tiling to rescuing a green pool and returning it to sparkling, usable water.`,
     features: [
       'Marbelite / fibreglass resurfacing',
       'Waterline tiling and coping repairs',
@@ -204,7 +204,7 @@ export const poolServices = [
     ],
     faqs: [
       {
-        q: 'Solar heating or a heat pump — which is better?',
+        q: 'Solar heating or a heat pump, which is better?',
         a: 'Solar is cheapest to run and ideal with good roof space and sun. A heat pump gives more consistent, on-demand heat. We recommend the right fit for your home and budget.'
       }
     ]
@@ -219,7 +219,7 @@ export const poolServices = [
     image: '/images/gallery/pool-4.jpg',
     icon: '⚙️',
     keywords: ['pool pump repair Randburg', 'pool pump replacement', 'pool pump installation'],
-    intro: `The pump is the heart of your pool. Aqua-Genie supplies, installs, and upgrades pool pumps — replacing failed or inefficient units with correctly-sized, energy-efficient pumps that keep your water circulating and clear.`,
+    intro: `The pump is the heart of your pool. Aqua-Genie supplies, installs, and upgrades pool pumps, replacing failed or inefficient units with correctly-sized, energy-efficient pumps that keep your water circulating and clear.`,
     features: [
       'Supply and installation of new pool pumps',
       'Like-for-like replacements',
@@ -249,7 +249,7 @@ export const poolServices = [
     image: '/images/gallery/pool-sand-change.jpg',
     icon: '🪣',
     keywords: ['filter sand change', 'pool filter service Gauteng', 'sand filter replacement'],
-    intro: `Filter sand does the quiet work of keeping your water clear — and it wears out. Aqua-Genie replaces filter sand and services filtration systems so your pool keeps filtering properly and the water stays clean.`,
+    intro: `Filter sand does the quiet work of keeping your water clear, and it wears out. Aqua-Genie replaces filter sand and services filtration systems so your pool keeps filtering properly and the water stays clean.`,
     features: [
       'Filter sand replacement (typically every few years)',
       'Filter inspection and lateral checks',
@@ -265,14 +265,14 @@ export const poolServices = [
     faqs: [
       {
         q: 'How often should filter sand be changed?',
-        a: 'As a rule of thumb, every three to five years — sooner if the water struggles to clear or the filter short-cycles. We can tell you the state of your sand during a service.'
+        a: 'As a rule of thumb, every three to five years, sooner if the water struggles to clear or the filter short-cycles. We can tell you the state of your sand during a service.'
       }
     ]
   }
 ];
 
 // ---------------------------------------------------------------------------
-// Services — Marshall Projects (home) division
+// Services, Marshall Projects (home) division
 // ---------------------------------------------------------------------------
 export const homeServices = [
   {
@@ -285,7 +285,7 @@ export const homeServices = [
     image: '/images/services/handyman-work.jpg',
     icon: '🎨',
     keywords: ['house painting Gauteng', 'exterior painting Randburg', 'residential painters'],
-    intro: `A proper paint job protects your home as much as it improves it. Marshall Projects handles interior and exterior painting for homeowners across Gauteng — with careful preparation, quality materials, and a neat finish that lasts.`,
+    intro: `A proper paint job protects your home as much as it improves it. Marshall Projects handles interior and exterior painting for homeowners across Gauteng, with careful preparation, quality materials, and a neat finish that lasts.`,
     features: [
       'Interior and exterior wall painting',
       'Surface preparation, cleaning, and priming',
@@ -301,7 +301,7 @@ export const homeServices = [
     faqs: [
       {
         q: 'Do you prepare surfaces before painting?',
-        a: 'Always. Good preparation — cleaning, filling, and priming — is what makes a paint job last. We never paint straight over problems.'
+        a: 'Always. Good preparation, cleaning, filling, and priming, is what makes a paint job last. We never paint straight over problems.'
       }
     ]
   },
@@ -315,7 +315,7 @@ export const homeServices = [
     image: '/images/gallery/Roof Ads IMG_0729.jpg',
     icon: '🛡️',
     keywords: ['waterproofing Gauteng', 'roof waterproofing Randburg', 'balcony waterproofing'],
-    intro: `Water damage is one of the most common — and most avoidable — property problems in Gauteng. Marshall Projects waterproofs roofs, balconies, parapets, and walls to stop leaks before they reach your ceilings and structure.`,
+    intro: `Water damage is one of the most common, and most avoidable, property problems in Gauteng. Marshall Projects waterproofs roofs, balconies, parapets, and walls to stop leaks before they reach your ceilings and structure.`,
     features: [
       'Flat and pitched roof waterproofing',
       'Balcony and parapet waterproofing',
@@ -375,7 +375,7 @@ export const homeServices = [
     image: '/images/gallery/Roof Ads IMG_0729.jpg',
     icon: '🏠',
     keywords: ['roof repairs Gauteng', 'roof maintenance Randburg', 'roofing contractor'],
-    intro: `Your roof takes the full force of the Highveld sun, wind, and summer storms. Marshall Projects repairs and maintains residential roofs — replacing broken tiles and sheeting, resealing, and fixing the small faults that let water in.`,
+    intro: `Your roof takes the full force of the Highveld sun, wind, and summer storms. Marshall Projects repairs and maintains residential roofs, replacing broken tiles and sheeting, resealing, and fixing the small faults that let water in.`,
     features: [
       'Tile and sheet roof repairs',
       'Ridge and flashing repairs',
@@ -391,7 +391,7 @@ export const homeServices = [
     faqs: [
       {
         q: 'How often should a roof be checked?',
-        a: 'A yearly inspection — ideally before the rainy season — catches slipped tiles, cracked seals, and blocked gutters while they are still cheap to fix.'
+        a: 'A yearly inspection, ideally before the rainy season, catches slipped tiles, cracked seals, and blocked gutters while they are still cheap to fix.'
       }
     ]
   },
@@ -401,11 +401,11 @@ export const homeServices = [
     title: 'General Building Maintenance',
     tagline: 'One trusted point of contact',
     summary:
-      'Comprehensive property maintenance for homeowners, landlords, and tenants — one reliable point of contact.',
+      'Comprehensive property maintenance for homeowners, landlords, and tenants, one reliable point of contact.',
     image: '/images/services/handyman-work.jpg',
     icon: '🔨',
     keywords: ['handyman Randburg', 'property maintenance Gauteng', 'building maintenance'],
-    intro: `Every home builds up a list of small jobs. Marshall Projects works through them for you — general building and handyman maintenance for homeowners, landlords, and tenants, handled by one reliable team instead of chasing several trades.`,
+    intro: `Every home builds up a list of small jobs. Marshall Projects works through them for you, general building and handyman maintenance for homeowners, landlords, and tenants, handled by one reliable team instead of chasing several trades.`,
     features: [
       'General repairs and handyman work',
       'Carpentry, fixtures, and fittings',
@@ -435,7 +435,7 @@ export const homeServices = [
     image: null,
     icon: '🪵',
     keywords: ['flooring installation Gauteng', 'laminate flooring Randburg', 'floor repairs'],
-    intro: `The right floor, properly laid, changes a whole room. Marshall Projects installs and repairs residential flooring — from laminate and vinyl to tiling repairs — with a level, clean finish.`,
+    intro: `The right floor, properly laid, changes a whole room. Marshall Projects installs and repairs residential flooring, from laminate and vinyl to tiling repairs, with a level, clean finish.`,
     features: [
       'Laminate and vinyl flooring installation',
       'Floor levelling and preparation',
@@ -464,7 +464,7 @@ export function getService(slug) {
 }
 
 // ---------------------------------------------------------------------------
-// Areas We Serve — Gauteng suburbs
+// Areas We Serve, Gauteng suburbs
 // ---------------------------------------------------------------------------
 export const areas = [
   { slug: 'randburg', name: 'Randburg', nearby: ['Ferndale', 'Robindale', 'Northcliff'] },
