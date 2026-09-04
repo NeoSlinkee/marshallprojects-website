@@ -111,8 +111,8 @@
 
   @media (max-width: 768px) {
     .whatsapp-float {
-      bottom: 1.5rem;
-      right: 1.5rem;
+      bottom: 5.25rem;
+      right: 1.25rem;
       width: 56px;
       height: 56px;
     }

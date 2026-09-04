@@ -35,8 +35,9 @@ export function localBusiness() {
       }))
     }
   };
-  if (GOOGLE.placeId) node.hasMap = 'https://www.google.com/maps/place/?q=place_id:' + GOOGLE.placeId;
-  if (GOOGLE.reviewsUrl) node.sameAs = [GOOGLE.reviewsUrl];
+  const mapLink = GOOGLE.mapUrl || (GOOGLE.placeId ? 'https://www.google.com/maps/place/?q=place_id:' + GOOGLE.placeId : '');
+  if (mapLink) node.hasMap = mapLink;
+  if (GOOGLE.mapUrl) node.sameAs = [GOOGLE.mapUrl];
   if (GOOGLE.ratingValue && GOOGLE.reviewCount) {
     node.aggregateRating = {
       '@type': 'AggregateRating',
