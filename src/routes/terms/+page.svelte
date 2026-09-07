@@ -42,11 +42,20 @@
       discussed before we've seen the job are estimates. A firm quote is provided after we've assessed
       the work, and the scope, price and timing of any job are agreed directly between you and us.
     </p>
-    <p class="owner-note">
-      <strong>Note for the business owner:</strong> if you want specific terms for deposits,
-      cancellations, guarantees or warranty periods on your work, tell me what they are and I'll add
-      them here. Right now this page deliberately makes no promises about those, since I don't want to
-      state terms you haven't set.
+    <h2>Deposits, guarantees and cancellations</h2>
+    <p>
+      For some jobs, particularly larger ones, we may ask for a deposit before work begins. Whether a
+      deposit applies, and how much, is confirmed as part of your quote before you commit to anything.
+    </p>
+    <p>
+      We stand behind our work and guarantee our workmanship. If something we've done isn't right,
+      contact us and we'll put it right. The exact scope of any guarantee depends on the nature of the
+      job and is confirmed with your quote.
+    </p>
+    <p>
+      We understand plans change. If you need to reschedule or cancel a booked job, let us know as
+      early as you can and we'll work with you. We handle cancellations flexibly on a case-by-case
+      basis.
     </p>
 
     <h2>Intellectual property</h2>
@@ -117,13 +126,6 @@
     margin-bottom: 0.75rem;
   }
 
-  .owner-note {
-    background: var(--accent-tint);
-    border-left: 3px solid var(--accent);
-    padding: 1rem 1.25rem;
-    border-radius: 6px;
-    font-size: 0.92rem;
-  }
 
   .disclaimer {
     margin-top: 2.5rem;

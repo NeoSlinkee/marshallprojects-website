@@ -50,13 +50,17 @@
       <li>To respond to your enquiry and provide a quote</li>
       <li>To arrange and carry out the services you request</li>
       <li>To contact you about your job or booking</li>
+      <li>
+        With your opt-in consent, to send you occasional maintenance reminders, updates and offers by
+        email
+      </li>
       <li>To improve our website and understand what visitors find useful</li>
     </ul>
-    <p class="owner-note">
-      <strong>Note for the business owner:</strong> you mentioned a future CRM and email newsletters.
-      If you plan to add returning clients to a mailing list, this section must state that clearly,
-      and you'll need to obtain consent before sending marketing emails. Tell me when the CRM is
-      being built and I'll update this policy to match.
+    <p class="newsletter-note">
+      With your consent, we may add you to our mailing list to send occasional updates, seasonal pool
+      and property maintenance reminders, and offers. You are only added if you opt in (for example, by
+      ticking a box), and every marketing email includes an unsubscribe link so you can opt out at any
+      time. We do not add clients to marketing lists automatically.
     </p>
 
     <h2>Cookies</h2>
@@ -143,12 +147,12 @@
     padding: 0;
   }
 
-  .owner-note {
-    background: var(--accent-tint);
-    border-left: 3px solid var(--accent);
+  .newsletter-note {
+    background: var(--aqua-tint);
+    border-left: 3px solid var(--aqua-secondary);
     padding: 1rem 1.25rem;
     border-radius: 6px;
-    font-size: 0.92rem;
+    font-size: 0.95rem;
   }
 
   .disclaimer {

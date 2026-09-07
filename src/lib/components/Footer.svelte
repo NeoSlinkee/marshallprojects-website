@@ -5,7 +5,7 @@
   <div class="footer-background"></div>
   <div class="footer-content">
     <div class="footer-section footer-brand">
-      <h3>Marshall Projects & Protective Coatings CC</h3>
+      <h3>Marshall Projects</h3>
       <p>Professional pool and property maintenance services across Gauteng</p>
     </div>
 

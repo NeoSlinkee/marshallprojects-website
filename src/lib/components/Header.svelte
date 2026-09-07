@@ -283,12 +283,12 @@
     font-size: 0.95rem;
     transition: all var(--transition-base);
     white-space: nowrap;
-    box-shadow: 0 6px 16px rgba(234, 88, 12, 0.25);
+    box-shadow: 0 6px 16px rgba(27, 111, 174, 0.25);
   }
   .cta-quote:hover {
     background: var(--accent-hover);
     transform: translateY(-1px);
-    box-shadow: 0 10px 22px rgba(234, 88, 12, 0.3);
+    box-shadow: 0 10px 22px rgba(27, 111, 174, 0.3);
   }
 
   .hamburger {
