@@ -11,7 +11,6 @@
   --mp-secondary: #2F2F2F;
   --mp-accent: #E5E5E5;
   --mp-light: #F8F8F8;
-
   /* Accent — primary CTA colour. Uses the Aqua-Genie brand blue so buttons
      match the rest of the site. White button text passes WCAG AA (5.34:1).
      (Previously orange #C2410C; changed to fit the theme.) */
@@ -19,7 +18,6 @@
   --accent-hover: #155E8C;
   --accent-tint: #EAF6FD;
   --accent-fg: #FFFFFF;
-
   /* Global Colors */
   --bg-main: #FFFFFF;
   --text-main: #333333;

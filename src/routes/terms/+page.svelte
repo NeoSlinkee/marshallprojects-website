@@ -126,7 +126,6 @@
     margin-bottom: 0.75rem;
   }
 
-
   .disclaimer {
     margin-top: 2.5rem;
     padding-top: 1.5rem;
