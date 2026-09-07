@@ -4,6 +4,7 @@
   import Footer from '$lib/components/Footer.svelte';
   import WhatsAppButton from '$lib/components/WhatsAppButton.svelte';
   import MobileCta from '$lib/components/MobileCta.svelte';
+  import CookieConsent from '$lib/components/CookieConsent.svelte';
   import '$lib/styles/variables.css';
   import '$lib/styles/pages.css';
 </script>
@@ -18,6 +19,7 @@
 <Footer />
 <WhatsAppButton />
 <MobileCta />
+<CookieConsent />
 
 <style>
   :global(html) {

@@ -12,9 +12,11 @@
   --mp-accent: #E5E5E5;
   --mp-light: #F8F8F8;
 
-  /* Accent — energetic orange for primary CTAs & highlights (pairs with the blue) */
-  --accent: #EA580C;
-  --accent-hover: #C2410C;
+  /* Accent — orange for primary CTAs & highlights (pairs with the blue).
+     Base darkened to #C2410C so white button text meets WCAG AA (5.18:1).
+     The old #EA580C failed AA for normal-size text (3.56:1). */
+  --accent: #C2410C;
+  --accent-hover: #9A3412;
   --accent-tint: #FFF1EA;
   --accent-fg: #FFFFFF;
 
