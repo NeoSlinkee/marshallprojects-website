@@ -43,7 +43,12 @@
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; {new Date().getFullYear()} Marshall Projects & Protective Coatings CC. All rights reserved.</p>
+    <p>&copy; {new Date().getFullYear()} Marshall Projects. All rights reserved.</p>
+    <p class="footer-legal-links">
+      <a href="/privacy">Privacy Policy</a>
+      <span aria-hidden="true">·</span>
+      <a href="/terms">Terms &amp; Conditions</a>
+    </p>
   </div>
 </footer>
 
@@ -134,6 +139,27 @@
     margin: 0;
     opacity: 0.8;
     font-size: 0.95rem;
+  }
+
+  .footer-legal-links {
+    margin-top: 0.5rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  .footer-legal-links a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.85;
+  }
+
+  .footer-legal-links a:hover {
+    text-decoration: underline;
+    opacity: 1;
+  }
+
+  .footer-legal-links span {
+    margin: 0 0.5rem;
+    opacity: 0.5;
   }
 
   @media (max-width: 1024px) {
