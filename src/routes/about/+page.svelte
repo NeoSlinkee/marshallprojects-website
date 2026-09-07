@@ -6,7 +6,7 @@
 
   const title = 'About Us | Marshall Projects & Aqua-Genie, Gauteng';
   const description =
-    'Marshall Projects & Protective Coatings CC runs two divisions, Aqua-Genie pool care and Marshall Projects home maintenance, serving homeowners across Gauteng with honest, reliable workmanship.';
+    'Marshall Projects runs two divisions, Aqua-Genie pool care and Marshall Projects home maintenance, serving homeowners across Gauteng with honest, reliable workmanship.';
 
   const jsonld = [
     localBusiness(),
@@ -28,7 +28,7 @@
     <h1>About Us</h1>
     <p class="lead">
       One trusted team for your home and your pool, two specialised divisions under
-      Marshall Projects & Protective Coatings CC.
+      Marshall Projects.
     </p>
   </div>
 </section>
@@ -39,7 +39,7 @@
   <div class="container-narrow prose">
     <h2>Who we are</h2>
     <p>
-      Marshall Projects & Protective Coatings CC is a Gauteng-based, residential-focused
+      Marshall Projects is a Gauteng-based, residential-focused
       maintenance business. We built the company around a simple idea: homeowners should be
       able to look after their property and their pool through one reliable point of contact,
       instead of chasing several different tradespeople.

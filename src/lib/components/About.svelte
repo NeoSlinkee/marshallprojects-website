@@ -7,7 +7,7 @@
     {#if showHeading}<h2>About Us</h2>{/if}
     <div class="about-content">
       <p>
-        <strong>Marshall Projects & Protective Coatings CC</strong> operates two specialised 
+        <strong>Marshall Projects</strong> operates two specialised 
         service divisions to better serve residential homeowners:
       </p>
       <div class="divisions">

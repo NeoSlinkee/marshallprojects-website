@@ -127,7 +127,7 @@
     border-radius: var(--radius-md);
     cursor: pointer;
     transition: all var(--transition-base);
-    box-shadow: 0 8px 20px rgba(234, 88, 12, 0.28);
+    box-shadow: 0 8px 20px rgba(27, 111, 174, 0.28);
     font-family: inherit;
     align-self: flex-start;
   }
@@ -136,7 +136,7 @@
     background: var(--accent-hover);
     border-color: var(--accent-hover);
     transform: translateY(-2px);
-    box-shadow: 0 12px 26px rgba(234, 88, 12, 0.34);
+    box-shadow: 0 12px 26px rgba(27, 111, 174, 0.34);
   }
 
   .cta-button:active {

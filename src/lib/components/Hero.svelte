@@ -245,18 +245,18 @@
   }
 
   .cta-primary {
-    background: var(--accent);
-    color: var(--accent-fg);
-    border-color: var(--accent);
-    box-shadow: 0 10px 24px rgba(234, 88, 12, 0.35);
+    background: white;
+    color: var(--aqua-secondary);
+    border-color: white;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
   }
 
   .cta-primary:hover {
-    background: var(--accent-hover);
-    border-color: var(--accent-hover);
-    color: white;
+    background: var(--aqua-tint);
+    border-color: var(--aqua-tint);
+    color: var(--aqua-secondary);
     transform: translateY(-2px);
-    box-shadow: 0 14px 30px rgba(234, 88, 12, 0.4);
+    box-shadow: 0 14px 30px rgba(27, 111, 174, 0.4);
   }
 
   .cta-secondary {

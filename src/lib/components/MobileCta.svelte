@@ -50,7 +50,7 @@
     .mc-quote {
       background: var(--accent);
       color: #fff;
-      box-shadow: 0 6px 16px rgba(234, 88, 12, 0.28);
+      box-shadow: 0 6px 16px rgba(27, 111, 174, 0.28);
     }
     /* keep the fixed bar from covering page content / footer */
     :global(body) {
